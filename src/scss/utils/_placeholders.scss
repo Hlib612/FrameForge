@@ -12,3 +12,13 @@
 %gap {
   gap: 38px; // уважно дивитися на гэп, бо у таких секцій, як "biggest_number", "paper_scissors_game", "calculator", він співпадає і тому у нас буде цей плейхолдер
 }
+%modal_basic {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(720deg) scale(1);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  transition: transform 300ms ease-in-out, color 300ms ease-in-out,
+    transform 600ms ease-in-out;
+}
