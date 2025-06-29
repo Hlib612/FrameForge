@@ -1,0 +1,1 @@
+:root{--main--test--color: black;--main--bg--color: white}body{background-color:var(--main--test--color)}header{color:var(--main--test--color)}
