@@ -1,0 +1,14 @@
+@use "../utils/variebles";
+
+%card-titles {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+%padding {
+  padding-bottom: 36px;
+}
+%gap {
+  gap: 38px; // уважно дивитися на гэп, бо у таких секцій, як "biggest_number", "paper_scissors_game", "calculator", він співпадає і тому у нас буде цей плейхолдер
+}
