@@ -1,1 +1,44 @@
-@use "../utils/variebles";
+@use '../utils/variebles';
+@use '../utils/placeholders';
+.gues_mumber {
+  // @extend %padding;
+  margin-bottom: 36px;
+  &_title {
+    text-align: center;
+    @extend %card-titles;
+    margin-bottom: 36px;
+    padding-top: 36px;
+  }
+  &_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+    &_geometry_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        @extend %padding;
+    }
+  &_input {
+    border-radius: 20px;
+    padding: 10px 45px 10px 10px;
+    width: 150px;
+    height: 35px;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: var(--inputs-color);
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    border: none;
+  }
+  &_submit_button {
+    border-radius: 0 20px 20px 0;
+    width: 35px;
+    height: 35px;
+  }
+  &_responde{
+    display: block;
+    max-width: 250px;
+  }
+}
