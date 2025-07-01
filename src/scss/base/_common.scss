@@ -1,4 +1,5 @@
 @use "../utils/variebles";
+@use "../utils/placeholders";
 body{
     background-color: var(--main--bg--color);
 }
@@ -31,6 +32,7 @@ body{
 }
 .main_title{
   margin-bottom: 36px;
+  @extend %padding;
   text-align: center;
   font-weight: 400;
 font-size: 24px;
