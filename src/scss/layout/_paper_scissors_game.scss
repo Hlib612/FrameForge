@@ -1,55 +1,63 @@
 @use "../utils/variebles";
 @use "../utils/placeholders";
 
-// .scissors_paper {
-//   &-title{
-//     @extend %card-titles;
-//     font-family: "Montserrat", sans-serif;
-//     @extend %padding;
-//   }
-//   &-list {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     @extend %gap;
-//     @extend %padding;
-//     &-item {
-//       padding: 10px;
-//       width: 60px;
-//       height: 60px;
-//       border-radius: 20px;
 
-//       background-color: black;
-//     }
-//   }
-// }
-// .scissors_paper_lists_wrapper {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   flex-wrap: wrap; 
-//   gap: 20px;
-// }
+.scissors_paper {
+  @extend %padding;
+  position: relative;
+  &-title{
+    @extend %card-titles;
+    font-family: "Montserrat", sans-serif;
+    @extend %padding;
+  }
+  &-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    @extend %gap;
+    @extend %padding;
+    &-item {
+      padding: 10px;
+      width: 60px;
+      height: 60px;
+      border-radius: 20px;
 
-// .scissors_paper-list {
-//   display: flex;
-//   gap: 20px;
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-// }
+      background-color: black;
+    }
+  }
+  &-button {
+    border-radius: 20px;
+    border: none;
+    background-color: #000;
+    padding: 10px 20px;
+    height: 35px;    
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    width: 182px;
+  }
+}
 
-// .scissors_paper_result_list {
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-//   text-align: right;
-//   min-width: 150px;
-// }
-
-// .scissors_paper_result_list_title {
-//   margin-bottom: 8px;
-//   font-size: 16px;
-// }
-
-
+.gameResult {
+  @extend %padding;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #039900;  
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.scissors_paper_result_list {
+  position:absolute;
+  left: 855px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  color: #000;
+}
