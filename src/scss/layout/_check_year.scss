@@ -1,1 +1,15 @@
 @use "../utils/variebles";
+@use "../utils/placeholders";
+
+.check_year{
+    margin-bottom: 36px;
+    &_card{
+    @extend %padding;
+    }
+    &_title{
+        @extend %card-titles;
+    }
+    &_input{
+        @include placeholders.input_basic(215px);
+    }
+}

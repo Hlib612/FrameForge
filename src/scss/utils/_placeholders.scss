@@ -1,8 +1,7 @@
-@use "../utils/variebles";
+@use '../utils/variebles';
 
 %card-titles {
   // font-family: $font-family;
-  text-align: center;
   font-weight: 400;
   font-size: 16px;
   color: #000;
@@ -14,7 +13,7 @@
   gap: 38px; // уважно дивитися на гэп, бо у таких секцій, як "biggest_number", "paper_scissors_game", "calculator", він співпадає і тому у нас буде цей плейхолдер
 }
 %modal_basic {
-    position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(720deg) scale(1);
@@ -22,4 +21,14 @@
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   transition: transform 300ms ease-in-out, color 300ms ease-in-out,
     transform 600ms ease-in-out;
+}
+@mixin input_basic($width) {
+  width: $width;
+  height: 35px;
+  font-weight: 400;
+  font-size: 12px;
+  background-color: var(--inputs-color);
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: none;
 }
