@@ -1,7 +1,10 @@
 @use '../utils/variebles';
 @use '../utils/placeholders';
 .gues_mumber {
-  // @extend %padding;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 36px;
   &_title {
     text-align: center;
@@ -9,28 +12,45 @@
     margin-bottom: 36px;
     padding-top: 36px;
   }
-  &_card{
+  // &_card{
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  // }
+  &_geometry_div {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    @extend %padding;
   }
-    &_geometry_div{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: baseline;
-        @extend %padding;
-    }
+   &::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 536px;
+    background-color: var(--buttons-background);
+  }
+  &_glue_div {
+    position: relative;
+  }
   &_input {
     padding: 10px 45px 10px 10px;
     @include placeholders.input_basic(150px);
   }
   &_submit_button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
     border-radius: 0 20px 20px 0;
     width: 35px;
     height: 35px;
+    cursor: pointer;
+    background-color: var(--buttons-background);
+    border: none;
   }
-  &_responde{
+  &_responde {
     display: block;
     max-width: 250px;
   }
