@@ -1,53 +1,48 @@
 @use "../utils/variebles";
+@use '../utils/placeholders';
 
 
 
 .biggest-number {
     position: relative;
-    padding: 40px 20px;
     text-align: center;
     margin: 40px 0;
-
-&-h1 {
-        font-family: 'Montserrat Alternates', sans-serif;
-        font-weight: 400;
-        line-height: 100%;
-        letter-spacing: 0;
-        margin-bottom: 20px;
-      }
-      
-      &-input {
-       
-        text-align: center;
-        margin: 0 10px;
-        font-size: 14px;
-        box-shadow: 3px 3px 0px 0px #00000040;
-    
-    
-      }
-      
-      &-p {
-        font-family: 'Montserrat Alternates', sans-serif;
-        font-weight: 400;
-        line-height: 100%;
-        letter-spacing: 0;
-        margin-top: 20px;
-      }
-      
-    
-      
-      &::before,
-      &::after {
-        content: "";
-        display: block;
-        height: 2px;
-        background-color: #000000;
-        width: 90%;
-        margin: 0 auto 20px auto;
-      }
-      
-      &::after {
-        margin: 20px auto 0 auto;
-      }
-    
+    @extend %basic_margin;
+   
   }
+
+
+  .biggest-number-h2 {
+    @extend %basic_margin;
+    @extend %card-titles;
+
+}
+
+.biggest-number-input {
+ margin-left: 38px ;
+ padding: 10px 20px;
+  @include placeholders.input_basic(135px);
+
+
+}
+
+.biggest-number-p {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  padding-bottom: 36px;
+}
+
+
+
+
+.biggest-number::after {
+
+  @extend %line;
+
+}
+
+.biggest-number::after {
+  margin: 20px auto 0 auto;
+}
