@@ -1,0 +1,80 @@
+@use '../utils/variebles';
+@use '../utils/placeholders';
+
+.greating_modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(720deg) scale(1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 576px;
+  height: 316px;
+  border-radius: 20px;
+  background-color: var(--main--bg--color);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  @media screen and (max-width: 768px) {
+    width: 400px;
+    height: 422px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 286px;
+    height: 400px;
+  }
+  &_button_close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+  }
+  &_description {
+    display: block;
+    text-align: center;
+    padding-top: 46px;
+    margin-bottom: 42px;
+    font-weight: 400;
+    font-size: 16px;
+    max-height: 200px;
+    @media screen and (max-width: 768px) {
+    min-height: 200px;
+     max-width: 276px;
+    }
+    @media screen and (max-width: 480px) {
+      max-width: 246px;
+      font-size: 16px;
+      margin-bottom: 18px;
+    }
+  }
+  &_command {
+    margin-bottom: 18px;
+  }
+  &_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &_input {
+    padding: 10px 90px 10px 10px;
+    @include placeholders.input_basic(169px);
+    box-shadow: none;
+    margin-bottom: 18px;
+  }
+  &_input::placeholder {
+    @extend %plaseholders_basic;
+  }
+  &_submit_button {
+    border-radius: 20px;
+    padding: 8px 20px;
+    width: 105px;
+    height: 35px;
+    font-family: var(--font-family);
+    background-color: var(--buttons-background);
+    color: var(--main--bg--color);
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
