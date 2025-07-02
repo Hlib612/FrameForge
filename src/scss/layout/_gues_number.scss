@@ -5,41 +5,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 36px;
+  @extend %basic_margin;
+
   &_title {
     text-align: center;
     @extend %card-titles;
-    margin-bottom: 36px;
-    padding-top: 36px;
+    @extend %basic_margin;
   }
-  // &_card{
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  // }
+
   &_geometry_div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
     @extend %padding;
-        @media screen and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
       align-items: center;
     }
   }
-  &::after {
-    content: '';
-    display: block;
-    height: 1.4px;
-    width: 536px;
-    background-color: var(--buttons-background);
-    @media screen and (max-width: 768px) {
-      width: 480px;
-    }
-    @media screen and (max-width: 480px) {
-      width: 300px;
-    }
-  }
+
   &_glue_div {
     position: relative;
   }
@@ -48,9 +32,7 @@
     @include placeholders.input_basic(150px);
   }
   &_input::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    color: var(--placeholders-color);
+    @extend %plaseholders_basic;
   }
   &_submit_button {
     position: absolute;
@@ -66,10 +48,10 @@
   }
   &_submit_button:hover {
     background-color: var(--placeholders-color);
-  //   .gues_mumber_svg{
-  //     fill: var(--buttons-background);
-  // }
-}
+    //   .gues_mumber_svg{
+    //     fill: var(--buttons-background);
+    // }
+  }
   &_responde {
     display: block;
     max-width: 250px;
@@ -82,5 +64,9 @@
     @media screen and (max-width: 480px) {
       margin-left: 76px;
     }
+  }
+
+  &::after {
+    @extend %line;
   }
 }

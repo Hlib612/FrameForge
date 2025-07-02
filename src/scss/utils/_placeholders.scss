@@ -5,9 +5,9 @@
   font-weight: 400;
   font-size: 16px;
   color: #000;
-          @media screen and (max-width: 480px) {
-  font-size: 14px;
-    }
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 }
 %padding {
   padding-bottom: 36px;
@@ -34,4 +34,25 @@
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   border: none;
+}
+%plaseholders_basic {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--placeholders-color);
+}
+%basic_margin {
+  margin-bottom: 36px;
+}
+%line {
+  content: '';
+  display: block;
+  height: 1.8px;
+  width: 536px;
+  background-color: var(--buttons-background);
+  @media screen and (max-width: 768px) {
+    width: 480px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 300px;
+  }
 }

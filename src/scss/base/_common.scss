@@ -1,8 +1,8 @@
-@use "../utils/variebles";
-@use "../utils/placeholders";
-body{
-    // background-color: var(--main--bg--color);
-    background-color: rgb(210, 205, 186); // на деякий час
+@use '../utils/variebles';
+@use '../utils/placeholders';
+body {
+  // background-color: var(--main--bg--color);
+  background-color: rgb(210, 205, 186); // на деякий час
 }
 .backdrop {
   z-index: 3;
@@ -17,8 +17,8 @@ body{
   visibility: visible;
   transition: opacity 500ms ease-in-out,
     visibility 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 1000ms;
-    // Delete it later
-    display: none;
+  // Delete it later
+  display: none;
 }
 
 .backdrop.is-hidden {
@@ -31,12 +31,14 @@ body{
 .no-scroll {
   overflow: hidden;
 }
-.main_title{
-  margin-bottom: 36px;
-  @extend %padding;
+.main_title {
+  @extend %basic_margin;
   text-align: center;
   font-weight: 400;
-font-size: 24px;
-color: #000;
-font-family: var(--font-family);
+  font-size: 24px;
+  color: #000;
+  font-family: var(--font-family);
+  @media screen and (max-width: 480px) {
+    font-size: 22px;
+  }
 }
