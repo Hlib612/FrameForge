@@ -1,15 +1,21 @@
 @use '../utils/variebles';
 @use '../utils/placeholders';
 .football {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @extend %basic_margin;
 
   &_title {
     @extend %card-titles;
     @extend %basic_margin;
     text-align: center;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 26px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 24px;
+    }
   }
   &_field {
     position: relative;
@@ -21,6 +27,14 @@
     background-color: #5abb58;
     @extend %basic_margin;
     cursor: crosshair;
+    @media screen and (max-width: 768px) {
+      width: 386px;
+      height: 200px;
+    }
+    @media screen and (max-width: 480px) {
+      width: 298px;
+      height: 188px;
+    }
   }
   &_ball {
     position: absolute;
@@ -31,7 +45,7 @@
     border-radius: 50%;
     background-color: var(--main--bg--color);
   }
-  &::after{
+  &::after {
     @extend %line;
   }
 }
