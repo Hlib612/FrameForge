@@ -1,1 +1,75 @@
 @use "../utils/variebles";
+@use "../utils/placeholders";
+
+.pick_scientist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-list {
+    @extend %padding;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 59px;
+    column-gap: 36px; 
+    width: 577px;
+
+    &-item{
+      border-radius: 20px;
+      width: 100px;
+      height: 100px;
+      background: #d9d9d9;
+    }
+    
+  }
+  &-title {
+    @extend %padding;
+    @extend %card-titles;
+  }
+  &-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 56px;
+    column-gap: 20px;
+    width: 857px;
+    &-1-item {
+      width: 227px;
+    }
+    &-2-item {
+      width: 298px;
+    }
+    &-3-item {
+      width: 282px;
+    }   
+    &-4-item {
+      width: 441px;
+    } 
+    &-5-item {
+      width: 380px;
+    } 
+    &-6-item {
+      width: 375px;
+    } 
+    &-7-item {
+      width: 329px;
+    } 
+    &-8-item {
+      width: 368px;
+    } 
+    &-9-item {
+      width: 489px;
+    } 
+  }
+  &-button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    background: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: right;
+    color: #fff
+  }
+}

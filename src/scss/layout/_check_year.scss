@@ -1,1 +1,89 @@
-@use "../utils/variebles";
+@use '../utils/variebles';
+@use '../utils/placeholders';
+
+.check_year {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @extend %basic_margin;
+
+  &::before {
+    content: '';
+    @extend %line;
+  }
+
+  &_title {
+    @extend %card-titles;
+    @extend %basic_margin;
+    padding-top: 36px;
+  }
+
+  &_geometry_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    @extend %padding;
+    @media screen and (max-width: 480px) {
+      align-items: center;
+    }
+  }
+
+  &_glue_div {
+    position: relative;
+  }
+
+  &_input {
+    @include placeholders.input_basic(215px);
+    padding: 10px 45px 10px 10px;
+
+    @media screen and (max-width: 768px) {
+      @include placeholders.input_basic(195px);
+    }
+    @media screen and (max-width: 480px) {
+      @include placeholders.input_basic(165px);
+    }
+  }
+
+  &_input::placeholder {
+    @extend %plaseholders_basic;
+  }
+
+  &_submit_button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0 20px 20px 0;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: var(--buttons-background);
+    border: none;
+  }
+
+  &_submit_button:hover {
+    background-color: var(--placeholders-color);
+    //   .check_year_svg{
+    //     fill: var(--buttons-background);
+    // }
+  }
+
+  &_responde {
+    display: block;
+    max-width: 250px;
+    margin-left: 202px;
+    font-weight: 400;
+    font-size: 12px;
+    @media screen and (max-width: 768px) {
+      margin-left: 120px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-left: 36px;
+    }
+  }
+  &::after {
+    @extend %line;
+  }
+}
