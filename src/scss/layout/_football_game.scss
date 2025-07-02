@@ -1,1 +1,37 @@
-@use "../utils/variebles";
+@use '../utils/variebles';
+@use '../utils/placeholders';
+.football {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  @extend %basic_margin;
+
+  &_title {
+    @extend %card-titles;
+    @extend %basic_margin;
+    text-align: center;
+  }
+  &_field {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #000;
+    border-radius: 37px;
+    width: 720px;
+    height: 220px;
+    background-color: #5abb58;
+    @extend %basic_margin;
+    cursor: crosshair;
+  }
+  &_ball {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--main--bg--color);
+  }
+  &::after{
+    @extend %line;
+  }
+}
