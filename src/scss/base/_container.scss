@@ -1,6 +1,18 @@
-.container {
-  width: 1120px;
-  padding: 0 15px;
-  outline: 2px dashed red;
-  margin: 0 auto;
-}
+  .container{
+      width: 320px;
+      padding: 0 15px;
+      margin: 0 auto;
+      outline: 1px dashed black;
+      @media screen and (min-width: 480px) {
+            width: 480px;
+            outline: 1px dashed red;
+      }
+      @media screen and (min-width: 768px) {
+          width: 768px;
+          outline: 1px dashed blue;
+        }
+      @media screen and (min-width: 1200px) {
+          width: 1200px;
+          outline: 1px dashed yellow;
+      }
+    }
