@@ -6,7 +6,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 36px;
+  @extend %basic_margin;
+
+  &::before {
+    content: '';
+    @extend %line;
+  }
+
+  &_title {
+    @extend %card-titles;
+    @extend %basic_margin;
+    padding-top: 36px;
+  }
 
   &_geometry_div {
     display: flex;
@@ -18,32 +29,29 @@
       align-items: center;
     }
   }
-  &_title {
-    @extend %card-titles;
-    margin-bottom: 36px;
-  }
 
-  &_glue_div{
+  &_glue_div {
     position: relative;
   }
+
   &_input {
     @include placeholders.input_basic(215px);
     padding: 10px 45px 10px 10px;
 
-        @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       @include placeholders.input_basic(195px);
     }
-        @media screen and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
       @include placeholders.input_basic(165px);
     }
   }
-    &_input::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    color: var(--placeholders-color);
+
+  &_input::placeholder {
+    @extend %plaseholders_basic;
   }
-  &_submit_button{
-        position: absolute;
+
+  &_submit_button {
+    position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -54,14 +62,16 @@
     background-color: var(--buttons-background);
     border: none;
   }
-    &_submit_button:hover {
+
+  &_submit_button:hover {
     background-color: var(--placeholders-color);
-  //   .check_year_svg{
-  //     fill: var(--buttons-background);
-  // }
-}
-  &_responde{
-          display: block;
+    //   .check_year_svg{
+    //     fill: var(--buttons-background);
+    // }
+  }
+
+  &_responde {
+    display: block;
     max-width: 250px;
     margin-left: 202px;
     font-weight: 400;
@@ -73,17 +83,7 @@
       margin-left: 36px;
     }
   }
-    &::after {
-    content: '';
-    display: block;
-    height: 1.4px;
-    width: 536px;
-    background-color: var(--buttons-background);
-    @media screen and (max-width: 768px) {
-      width: 480px;
-    }
-    @media screen and (max-width: 480px) {
-      width: 300px;
-    }
+  &::after {
+    @extend %line;
   }
 }
