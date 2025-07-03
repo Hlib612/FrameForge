@@ -1,1 +1,60 @@
 @use "../utils/variebles";
+@use '../utils/placeholders';
+
+.calc-time {
+    position: relative;
+    text-align: center;
+    margin: 40px 0;
+    @extend %basic_margin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .calc-time-h2 {
+    @extend %basic_margin;
+    @extend %card-titles;
+  }
+  
+  .calc-time-input-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 200px; 
+  }
+  
+  .input-field {
+    width: 100%;
+  
+    border-radius: 20px;
+    border: none;
+    background-color: #e0e0e0;
+    font-size: 16px;
+    color: #333;
+    @include placeholders.input_basic(135px);
+  }
+  
+  .search-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: var(--buttons-background);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+  }
+  
+
+  
+  .calc-time::after {
+    @extend %line;
+    margin: 20px auto 0 auto;
+  }
+  
