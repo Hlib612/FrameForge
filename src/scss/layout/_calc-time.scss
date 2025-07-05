@@ -17,9 +17,9 @@
   }
   
   .calc-time-input-wrapper {
-    position: relative;
-    display: inline-block;
-    width: 200px; 
+    
+    padding: 10px 45px 10px 10px;
+    @include placeholders.input_basic(150px);
     
   }
   
@@ -36,11 +36,9 @@
   }
   
   .search-button {
-    position: absolute;
 
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
     border-radius: 0 20px 20px 0;
     width: 35px;
     height: 35px;
@@ -56,6 +54,7 @@
     @extend %line;
     margin: 20px auto 0 auto;
   }
+  
   
 
   
