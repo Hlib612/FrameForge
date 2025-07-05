@@ -7,8 +7,9 @@
   position: relative;
   &-title{
     @extend %card-titles;
-    font-family: "Montserrat", sans-serif;
     @extend %padding;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
   }
   &-list {
     display: flex;
@@ -55,6 +56,7 @@
 .scissors_paper_result_list {
   position:absolute;
   left: 855px;
+  top: 48px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 12px;
