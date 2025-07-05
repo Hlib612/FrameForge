@@ -1,4 +1,75 @@
 @use "../utils/variebles";
-header{
+@use "../utils/placeholders";
+.header {
     color: var(--main--test--color);
+    background-color: var(--main--bg--color);
+}
+.headerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 60px;
+    &_logo {
+        height: 40px;
+        width: 93px;
+        // margin-left: 175px;
+    }
+    &_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-left: 81px;
+    }
+    &_item {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--main--test--color);
+    }
+    &_greetingsDiv {
+        display: flex;
+        margin-right: 0;
+        margin-left: 361px;
+    }
+    &_greetings {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--main--test--color);
+        margin-left: 51px;
+    }
+}
+.dropDown {
+    position: relative;
+    display: inline-block;
+    &_btn {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        cursor: pointer;
+    }
+    &_menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        z-index: 10;
+    }
+    &_item {
+        text-align: center;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--main--test--color);
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        width: 160px;
+        height: 35px;
+        cursor: pointer;
+        &_bottom {
+            border-bottom: 1px solid #000;
+            border-radius: 0 0 20px 20px;
+        }
+    }
 }
