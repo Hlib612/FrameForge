@@ -20,11 +20,13 @@
     position: relative;
     display: inline-block;
     width: 200px; 
+    
   }
   
   .input-field {
     width: 100%;
-  
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
     border-radius: 20px;
     border: none;
     background-color: #e0e0e0;
@@ -35,20 +37,17 @@
   
   .search-button {
     position: absolute;
-    right: 5px;
+
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    border-radius: 0 20px 20px 0;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
     background-color: var(--buttons-background);
     border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 14px;
+   
   }
   
 
