@@ -1,1 +1,79 @@
 @use "../utils/variebles";
+@use "../utils/placeholders";
+.calcNumberDiv {
+  @extend %padding;
+  &_align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend %gap;
+  }
+    &_title {
+      @extend %card-titles;
+      text-align: center;
+      @extend %basic_margin;
+    }
+    &_label {
+      border-radius: 20px;
+      padding: 10px 20px;
+      width: 135px;
+      height: 35px;
+      box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+      background: #d7d7d7;
+    }
+    &_input {
+      background-color: transparent;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 12px;
+      color: var(--placeholders-color);
+      border: none;
+    }
+    &_list {
+      display: grid;
+      grid-template-columns: repeat(2, 27px);
+      justify-content: center;
+      align-items: center;
+      width: 62px;
+      height: 60px;
+      gap: 10px;
+    }
+    &_item {
+
+    }
+    &_button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      padding: 5px 10px;
+      width: 27px;
+      height: 25px;
+      box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+      background: #000;
+      color: #FFF;
+      border: none;
+      cursor: pointer;
+    }
+    &_resultLabel {
+      border-radius: 20px;
+      padding: 10px 20px;
+      width: 118px;
+      height: 35px;
+      background: #d7d7d7;
+      padding: 10px 20px;
+    }
+    &_resultInput {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 12px;
+      color: #7e7e7e;
+      border: none;
+      background-color: transparent;
+    }
+}
+
+.calcNumberDiv::after {
+  @extend %line;
+  margin: 20px auto 0 auto;
+}
