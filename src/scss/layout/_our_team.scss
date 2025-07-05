@@ -12,12 +12,18 @@
     justify-content: center;
     align-items: center;
     &_item {
-      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
     &_img {
       display: flex;
       align-items: center;
       justify-content: center;
+      border-radius: 20px;
+      width: 150px;
+      height: 150px;
     }
     &_title {
       text-align: center;
@@ -35,6 +41,9 @@
     }
   }
   &_button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     &_svg {
 
     }
