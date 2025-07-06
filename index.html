@@ -23,8 +23,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <script type="module" crossorigin src="/FrameForge/assets/index-1c721dfe.js"></script>
-    <link rel="stylesheet" href="/FrameForge/assets/index-94fea64b.css">
+    <script type="module" crossorigin src="/FrameForge/assets/index-e2c89e0b.js"></script>
+    <link rel="stylesheet" href="/FrameForge/assets/index-4fdcfed7.css">
   </head>
   <body>
 
@@ -38,9 +38,9 @@
           <div class="dropDown">
             <button class="dropDown_btn">Інтерактив <span><img src="/FrameForge/assets/arrow-bottom-b0162b36.svg" alt="" class="dropDown_btn_arrow"></span></button>
             <div class="dropDown_menu">
-              <div class="dropDown_item">Числовий</div>
-              <div class="dropDown_item">Ігровий</div>
-              <div class="dropDown_item dropDown_item_bottom">Ознайомчий</div>
+              <div class="dropDown_item"><a href="#">Числовий</a></div>
+              <div class="dropDown_item"><a href="#">Ігровий</a></div>
+              <div class="dropDown_item dropDown_item_bottom"><a href="#">Ознайомчий</a></div>
             </div>
           </div>
         </li>
@@ -53,7 +53,7 @@
       </ul>
       <div class="headerDiv_greetingsDiv">
         <label class="headerDiv_label">
-          <input type="checkbox" class="headerDiv_checkbox" />
+          <input type="checkbox" class="headerDiv_checkbox" id="themeToggle"/>
           <span class="headerDiv_slider"></span>
         </label>
         <p class="headerDiv_greetings">Вітаємо, <span>User</span>!</p>
@@ -134,28 +134,28 @@
   <h2 class="calcNumberDiv_title">Калькулятор</h2>
   <div class="calcNumberDiv_align">
   <label class="calcNumberDiv_label">
-    <input type="text" placeholder="Введіть число" class="calcNumberDiv_input"/>
+    <input type="text" placeholder="Введіть число" class="calcNumberDiv_input" id="first-num"/>
   </label>
   <ul class="calcNumberDiv_list">
     <li class="calcNumberDiv_item">
-      <button class="calcNumberDiv_button">+</button>
+      <button class="calcNumberDiv_button" id="plus-btn">+</button>
     </li>
     <li class="calcNumberDiv_item">
-      <button class="calcNumberDiv_button">*</button>
+      <button class="calcNumberDiv_button" id="multiply-btn">*</button>
     </li>
     <li class="calcNumberDiv_item">
-      <button class="calcNumberDiv_button">-</button>
+      <button class="calcNumberDiv_button" id="minus-btn">-</button>
     </li>
     <li class="calcNumberDiv_item">
-      <button class="calcNumberDiv_button">/</button>
+      <button class="calcNumberDiv_button" id="divide-btn">/</button>
     </li>
   </ul>
   <label class="calcNumberDiv_label">
-    <input type="text" placeholder="Введіть число" class="calcNumberDiv_input"/>
+    <input type="text" placeholder="Введіть число" class="calcNumberDiv_input" id="second-num"/>
   </label>
-  <button class="calcNumberDiv_button">=</button>
+  <button class="calcNumberDiv_button" id="equals-btn">=</button>
   <label class="calcNumberDiv_resultLabel">
-    <input type="text" placeholder="Результат" class="calcNumberDiv_resultInput"/>
+    <input type="text" placeholder="Результат" class="calcNumberDiv_resultInput" id="result-num"/>
   </label>
 </div>
 </div>
@@ -188,32 +188,32 @@
       <div class="ourTeamDiv">
   <h2 class="ourTeamDiv_title">Наша команда</h2>
   <div class="ourTeamDiv_slider">
-    <div class="ourTeamDiv_slider_item">
+    <div class="ourTeamDiv_slider_item" id="first-card">
       <img src="https://en.dota2changer.com/Image/Nevermore%20Blue%20Shadow%20Fiend%20Custom%20Arcana.jpg?v=2" alt="studentPhoto1" class="ourTeamDiv_slider_img"/>
       <h3 class="ourTeamDiv_slider_title">Олександр</h3>
       <p class="ourTeamDiv_slider_description">Інформація про роботу, яку він/вона виконав/ла</p>
     </div>
-    <div class="ourTeamDiv_slider_item">
+    <div class="ourTeamDiv_slider_item" id="second-card">
       <img src="https://dota2changer.com/image/f/Arcana%20MegaPack%20Shadow%20Fiend.webp" alt="studentPhoto2" class="ourTeamDiv_slider_img"/>
       <h3 class="ourTeamDiv_slider_title">Гліб</h3>
       <p class="ourTeamDiv_slider_description">Інформація про роботу, яку він/вона виконав/ла</p>
     </div>
-    <div class="ourTeamDiv_slider_item">
+    <div class="ourTeamDiv_slider_item" id="third-card">
       <img src="https://dota2changer.com/image/f/Purple%20Platinum%20Shadow%20Fiend%20Arcana%20ModPack%20SF.webp" alt="studentPhoto3" class="ourTeamDiv_slider_img"/>
       <h3 class="ourTeamDiv_slider_title">Сергій</h3>
       <p class="ourTeamDiv_slider_description">Інформація про роботу, яку він/вона виконав/ла</p>
     </div>
-    <div class="ourTeamDiv_slider_item">
+    <div class="ourTeamDiv_slider_item" id="fourth-card">
       <img src="https://en.dota2changer.com/Image/Arcana%20SF%20Demon%20Eather%20Blue%20Color.jpg?v=1" alt="studentPhoto4" class="ourTeamDiv_slider_img"/>
       <h3 class="ourTeamDiv_slider_title">Кіра</h3>
       <p class="ourTeamDiv_slider_description">Інформація про роботу, яку він/вона виконав/ла</p>
     </div>
   </div>
-  <button class="ourTeamDiv_button">
-    <img src="../img/arrow-left.svg" alt="" class="ourTeamDiv_button_svg">
+  <button class="ourTeamDiv_button left" id="button-slider-previous">
+    <img src="/FrameForge/assets/arrow-left-b46f8c5c.svg" alt="arrow-left" class="ourTeamDiv_button_svg">
   </button>
-  <button class="ourTeamDiv_button">
-    <img src="../img/arrow-right.svg" alt="" class="ourTeamDiv_button_svg">
+  <button class="ourTeamDiv_button right" id="button-slider-next">
+    <img src="/FrameForge/assets/arrow-right-ebcefe70.svg" alt="arrow-right" class="ourTeamDiv_button_svg">
   </button>
 </div>
 
