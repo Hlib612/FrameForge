@@ -50,7 +50,7 @@
       background: #000;
       color: #FFF;
       border: none;
-      transition: 0.4s;
+      transition: 0.1s;
       
      
 
@@ -65,4 +65,21 @@
     margin: 20px auto 0 auto;
   }
   
- 
+.search-button-svg{
+  stroke: white;
+  fill:none;
+}
+
+.search-button-svg:hover{
+stroke: black;
+fill: none;
+transition: 0.1s;
+transform: scale(1.5);
+}
+ .search-button:hover{
+  background-color: #e7e5e5;
+ }
+
+.calc-time-result{
+  display: flex;
+}
