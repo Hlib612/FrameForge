@@ -114,7 +114,7 @@
         width: 160px;
         height: 35px;
         cursor: pointer;
-        background-color: #FFF;
+        background-color: var(--main--bg--color);
         padding: 10px;
         transition: 0.8s;
         &_bottom {

@@ -4,7 +4,7 @@
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
-  color: #000;
+  color: var(--main--test--color);
   @media screen and (max-width: 480px) {
     font-size: 14px;
   }
