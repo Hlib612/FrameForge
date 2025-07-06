@@ -29,6 +29,8 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    margin-right: 300px;
+    margin-bottom: 15px;
     
   }
   .input-field {
@@ -48,6 +50,8 @@
       background: #000;
       color: #FFF;
       border: none;
+      transition: 0.4s;
+      
      
 
     
@@ -61,5 +65,4 @@
     margin: 20px auto 0 auto;
   }
   
-  
-
+ 
