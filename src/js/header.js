@@ -17,10 +17,16 @@ let darkMode = false;
 document.getElementById('themeToggle').addEventListener('click', () => {
   darkMode = !darkMode;
   if (darkMode) {
-    document.body.style.backgroundColor = '#1e252b';
+    document.querySelector('.main-container-bg-color').style.backgroundColor =
+      '#1e252b';
     document.body.style.color = '#FFF';
+    document.querySelector('.header').style.backgroundColor = '#1e252b';
+    document.querySelector('.footer').style.backgroundColor = '#1e252b';
   } else {
-    document.body.style.backgroundColor = '#FFF';
+    document.querySelector('.main-container-bg-color').style.backgroundColor =
+      '#FFF';
     document.body.style.color = '#000000';
+    document.querySelector('.header').style.backgroundColor = '#FFF';
+    document.querySelector('.footer').style.backgroundColor = '#FFF';
   }
 })
