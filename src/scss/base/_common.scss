@@ -2,7 +2,16 @@
 @use '../utils/placeholders';
 body {
   // background-color: var(--main--bg--color);
-  background-color: rgb(210, 205, 186); // на деякий час
+  background-color: #fff; // на деякий час
+}
+main {
+  background-image: url("../../img/main-background-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container-bg-color {
+  background-color: #fff;
 }
 .backdrop {
   z-index: 3;
@@ -41,4 +50,8 @@ body {
   @media screen and (max-width: 480px) {
     font-size: 22px;
   }
+}
+
+button {
+  cursor: pointer;
 }
