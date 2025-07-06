@@ -54,6 +54,12 @@
       color: #FFF;
       border: none;
       cursor: pointer;
+      transition: 0.4s;
+    }
+    &_button:hover {
+      background: var(--inputs-color);
+      color: #000;
+      transition: 0.4s;
     }
     &_resultLabel {
       border-radius: 20px;

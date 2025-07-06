@@ -1,6 +1,7 @@
 @use "../utils/variebles";
 @use "../utils/placeholders";
 .ourTeamDiv {
+  position: relative;
   @extend %padding; 
   &_title {
     @extend %card-titles;
@@ -16,6 +17,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      gap: 20px;
     }
     &_img {
       display: flex;
@@ -41,6 +43,7 @@
     }
   }
   &_button {
+    position: absolute;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -52,4 +55,25 @@
 .ourTeamDiv::after {
   @extend %line;
   margin: 20px auto 0 auto;
+}
+.left {
+  top: 80px;
+  left: 30px;
+}
+.right {
+  top: 80px;
+  right: 30px;
+} 
+
+#first-card {
+  display: flex;
+}
+#second-card {
+  display: none;
+}
+#third-card {
+  display: none;
+}
+#fourth-card {
+  display: none;
 }
