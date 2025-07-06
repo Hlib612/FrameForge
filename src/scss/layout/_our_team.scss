@@ -1,6 +1,7 @@
 @use "../utils/variebles";
 @use "../utils/placeholders";
 .ourTeamDiv {
+  position: relative;
   @extend %padding; 
   &_title {
     @extend %card-titles;
@@ -12,12 +13,19 @@
     justify-content: center;
     align-items: center;
     &_item {
-      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
     }
     &_img {
       display: flex;
       align-items: center;
       justify-content: center;
+      border-radius: 20px;
+      width: 150px;
+      height: 150px;
     }
     &_title {
       text-align: center;
@@ -35,6 +43,10 @@
     }
   }
   &_button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     &_svg {
 
     }
@@ -43,4 +55,25 @@
 .ourTeamDiv::after {
   @extend %line;
   margin: 20px auto 0 auto;
+}
+.left {
+  top: 80px;
+  left: 30px;
+}
+.right {
+  top: 80px;
+  right: 30px;
+} 
+
+#first-card {
+  display: flex;
+}
+#second-card {
+  display: none;
+}
+#third-card {
+  display: none;
+}
+#fourth-card {
+  display: none;
 }

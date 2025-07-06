@@ -3,6 +3,7 @@
 .header {
     color: var(--main--test--color);
     background-color: var(--main--bg--color);
+    padding: 21px 0px 21px 0px;
 }
 .headerDiv{
     display: flex;
@@ -30,7 +31,42 @@
     &_greetingsDiv {
         display: flex;
         margin-right: 0;
-        margin-left: 361px;
+        margin-left: auto;
+    }
+    &_label {
+        position: relative;
+        width: 40px;
+        height: 20px;
+        cursor: pointer;
+    }
+    &_checkbox {
+        display: none;
+    }
+    &_slider {
+        position: absolute;
+        border-radius: 11px;
+        background-color: var(--placeholders-color);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: 0.4s;
+    }
+    &_slider::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #FFF;
+        border-radius: 50%;
+        background-image: url('../img/white-dark.svg');
+        background-size: contain;
+        transition: 0.4s;
+    }
+    &_checkbox:checked + &_slider::before {
+        transform: translateX(20px);
+        background-image: url('../img/dark-white.svg');
+        background-color: #000;
     }
     &_greetings {
         font-family: var(--font-family);
@@ -38,16 +74,26 @@
         font-size: 12px;
         color: var(--main--test--color);
         margin-left: 51px;
+        display: flex;
+        align-items: center;
     }
+    
 }
 .dropDown {
     position: relative;
     display: inline-block;
     &_btn {
+        display: flex;
+        align-items: center;
         border: none;
         background-color: transparent;
         padding: 0;
         cursor: pointer;
+        &_arrow {
+            width: 11px;
+            height: 7px;
+            margin-left: 8px;
+        }
     }
     &_menu {
         display: none;
@@ -55,6 +101,7 @@
         top: 100%;
         left: 0%;
         z-index: 10;
+        
     }
     &_item {
         text-align: center;
@@ -67,9 +114,16 @@
         width: 160px;
         height: 35px;
         cursor: pointer;
+        background-color: #FFF;
+        padding: 10px;
+        transition: 0.8s;
         &_bottom {
             border-bottom: 1px solid #000;
             border-radius: 0 0 20px 20px;
         }
+    }
+    &_item:hover {
+        background-color: #f1f1f1;
+        transition: 0.5s;
     }
 }
