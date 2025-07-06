@@ -22,29 +22,39 @@
     @include placeholders.input_basic(150px);
     
   }
-  
-  .input-field {
-    width: 100%;
+  .input-group{
     font-family: 'Montserrat Alternates', sans-serif;
-    text-align: center;
+    box-shadow: 3px 3px #00000040;
     border-radius: 20px;
-    border: none;
-    background-color: #e0e0e0;
-    font-size: 16px;
-    color: #333;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 300px;
+    margin-bottom: 15px;
+    
+  }
+  .input-field {
     @include placeholders.input_basic(135px);
+    border-radius: 0 ;
+    padding-left: 10px;
   }
   
   .search-button {
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      // border-radius: 20px;
+      padding: 5px 10px;
+      width: 35px;
+      box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+      background: #000;
+      color: #FFF;
+      border: none;
+      transition: 0.1s;
+      
+     
 
-    right: 0;
-    top: 30%;
-    border-radius: 0 20px 20px 0;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    background-color: var(--buttons-background);
-    border: none;
+    
    
   }
   
@@ -55,6 +65,21 @@
     margin: 20px auto 0 auto;
   }
   
-  
+.search-button-svg{
+  stroke: white;
+  fill:none;
+}
 
-  
+.search-button-svg:hover{
+stroke: black;
+fill: none;
+transition: 0.1s;
+transform: scale(1.5);
+}
+ .search-button:hover{
+  background-color: #e7e5e5;
+ }
+
+.calc-time-result{
+  display: flex;
+}
