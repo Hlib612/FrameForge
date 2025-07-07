@@ -1,5 +1,5 @@
 let darkMode = false;
-document.getElementById('themeToggle').addEventListener('click', () => {
+document.querySelector('#themeToggle').addEventListener('click', () => {
   darkMode = !darkMode;
   if (darkMode) {
     document.documentElement.style.setProperty('--main--test--color', '#FFF');
@@ -27,3 +27,4 @@ document.getElementById('themeToggle').addEventListener('click', () => {
 //     document.querySelector('.footer').style.backgroundColor = '#FFF';
 //   }
 // })
+

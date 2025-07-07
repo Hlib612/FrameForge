@@ -1,8 +1,8 @@
 @use '../utils/variebles';
 @use '../utils/placeholders';
 body {
-  // background-color: var(--main--bg--color);
-  background-color: #fff; // на деякий час
+  background-color: var(--main--bg--color);
+  // background-color: #fff; // на деякий час
 }
 main {
   background-image: url("../img/main-background-img.png");
@@ -11,7 +11,7 @@ main {
   background-repeat: no-repeat;
 }
 .main-container-bg-color {
-  background-color: #fff;
+  background-color: var(--main--bg--color);
 }
 .backdrop {
   z-index: 3;

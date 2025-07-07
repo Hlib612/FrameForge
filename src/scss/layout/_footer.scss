@@ -5,6 +5,7 @@
   padding-bottom: 60px;
   padding-top: 60px;
   font-family: var(--font-family);
+  background-color: var(main--bg--color);
   &-flex-container {
     display: flex;
     justify-content: space-between;
@@ -14,7 +15,7 @@
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 6px;
-    color: #000;    
+    color: var(--main--test--color);    
   }
   &-subscribe-button {
     border-radius: 20px;
@@ -52,7 +53,7 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 170%;
-      color: #000;  
+      color: var(--main--test--color);  
     }
   }
   &-img {
