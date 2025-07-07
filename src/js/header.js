@@ -27,3 +27,4 @@ document.getElementById('themeToggle').addEventListener('click', () => {
 //     document.querySelector('.footer').style.backgroundColor = '#FFF';
 //   }
 // })
+
