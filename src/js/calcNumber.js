@@ -1,15 +1,15 @@
-const enterFirstNumber = document.getElementById('first-num');
-const enterSecondNumber = document.getElementById('second-num');
-const resultNumber = document.getElementById('result-num');
+const enterFirstNumber = document.querySelector('#first-num');
+const enterSecondNumber = document.querySelector('#second-num');
+const resultNumber = document.querySelector('#result-num');
 
 let operator = null;
 
-document.getElementById('plus-btn').addEventListener('click', () => {operator = '+'});
-document.getElementById('multiply-btn').addEventListener('click', () => {operator = '-'});
-document.getElementById('minus-btn').addEventListener('click', () => {operator = '*'});
-document.getElementById('divide-btn').addEventListener('click', () => {operator = '/'});
+document.querySelector('#plus-btn').addEventListener('click', () => {operator = '+'});
+document.querySelector('#multiply-btn').addEventListener('click', () => {operator = '-'});
+document.querySelector('#minus-btn').addEventListener('click', () => {operator = '*'});
+document.querySelector('#divide-btn').addEventListener('click', () => {operator = '/'});
 
-const equalsButton = document.getElementById('equals-btn').addEventListener('click', () => {
+const equalsButton = document.querySelector('#equals-btn').addEventListener('click', () => {
   const num1 = parseFloat(enterFirstNumber.value);
   const num2 = parseFloat(enterSecondNumber.value);
   let result;
