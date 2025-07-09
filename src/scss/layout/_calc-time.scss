@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
   
   .calc-time-h2 {
@@ -70,16 +71,32 @@
   fill:none;
 }
 
-.search-button-svg:hover{
-stroke: black;
-fill: none;
-transition: 0.1s;
-transform: scale(1.5);
-}
- .search-button:hover{
-  background-color: #e7e5e5;
- }
+.search-button:hover .search-button-svg {
+  stroke: rgb(255, 255, 255);
+  fill: none;
+  transition: 0.1s;
+  transform: scale(1.5);
+  }
 
 .calc-time-result{
   display: flex;
+    justify-content: center;
+    overflow: hidden;
+     margin-left: 250px;
+     margin-bottom: 15px;
+ 
+}
+
+.dashed-line{
+    flex-grow: 1;
+    height: 1px;
+    border-bottom: 2px dashed black;
+   
+
+}
+
+.calc-time-element{
+  display: flex;
+  gap: 20px;
+  align-items: end;
 }
