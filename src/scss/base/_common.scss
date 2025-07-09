@@ -1,17 +1,17 @@
 @use '../utils/variebles';
 @use '../utils/placeholders';
 body {
-  // background-color: var(--main--bg--color);
-  background-color: #fff; // на деякий час
+  background-color: var(--main--bg--color);
+  // background-color: #fff; // на деякий час
 }
 main {
-  background-image: url("../../img/main-background-img.png");
+  background-image: url("../img/main-background-img.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-bg-color {
-  background-color: #fff;
+  background-color: var(--main--bg--color);
 }
 .backdrop {
   z-index: 3;
@@ -45,7 +45,7 @@ main {
   text-align: center;
   font-weight: 400;
   font-size: 24px;
-  color: #000;
+  color: var(--main--test--color);
   font-family: var(--font-family);
   @media screen and (max-width: 480px) {
     font-size: 22px;

@@ -80,23 +80,4 @@
 
 .calc-time-result{
   display: flex;
-    justify-content: center;
-    overflow: hidden;
-     margin-left: 250px;
-     margin-bottom: 15px;
- 
-}
-
-.dashed-line{
-    flex-grow: 1;
-    height: 1px;
-    border-bottom: 2px dashed black;
-   
-
-}
-
-.calc-time-element{
-  display: flex;
-  gap: 20px;
-  align-items: end;
 }
