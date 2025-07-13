@@ -6,25 +6,27 @@ const computerWinsCounter = document.querySelector("#computerWinsCounter")
 const userWinsCounter = document.querySelector("#userWinsCounter")
 const showComputerChoiceBtn = document.querySelector("#computerChoiceBtn")
 const rpsOptionListItems = document.querySelectorAll(".scissors_paper-list li");
+let computerCurrentChoice = null;
 let computerWins = 0;
 let userWins = 0;
 
 function getComputerChoice() {
   const randomIndex = Math.floor(Math.random() * computerChoices.length);
-  return computerChoices[randomIndex];
+  return computerCurrentChoice = computerChoices[randomIndex];
 }
 
 const comparison = function(userChoice) {
-  const computerChoice = getComputerChoice();  // тут я зберігається поточний вибір компютера 
-
-  if(userChoice === computerChoice) { // перевірка на нічию, якщо так, то ніхто не отримає перемогу і дерево наше не чипаємо зайвий раз 
+  const computerCurrentChoice = getComputerChoice();  // тут я зберігається поточний вибір компютера 
+  console.log(computerCurrentChoice);
+  
+  if(userChoice === computerCurrentChoice) { // перевірка на нічию, якщо так, то ніхто не отримає перемогу і дерево наше не чипаємо зайвий раз 
     gameResult.textContent = "Нічия!";
     gameResult.style.color = "gray";
     return;
   }
 
   const userWinsRound = // перевірка на те хто виграв раунд 
-    (userChoice === "rock" && computerChoice === "scissors") || (userChoice === "paper" && computerChoice === "rock") || (userChoice === "scissors" && computerChoice === "paper");
+    (userChoice === "rock" && computerCurrentChoice === "scissors") || (userChoice === "paper" && computerCurrentChoice === "rock") || (userChoice === "scissors" && computerCurrentChoice === "paper");
     
   if (userWinsRound) { // якщо буде тру, то юзер, не компютер
     userWins += 1;
@@ -51,11 +53,12 @@ rpsOptionList.addEventListener("click", (event) => {
 })
 
 showComputerChoiceBtn.addEventListener("click", () => {
-  const computerChoice = getComputerChoice();
+    if (computerCurrentChoice === null) return; // тобто якщо значення не має, то код не виконається
 
+     console.log(computerCurrentChoice);
      rpsOptionListItems.forEach(item => {
       item.style.backgroundColor = "#000"; 
-    if (item.classList.contains(computerChoice)) {
+    if (item.classList.contains(computerCurrentChoice)) {
       item.style.backgroundColor = "#BEBEBE";
     }
   });
