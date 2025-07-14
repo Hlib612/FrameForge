@@ -2,7 +2,6 @@ const scientistGameList = document.querySelectorAll(".pick_scientist__list li > 
 const buttonList = document.querySelectorAll(".pick_scientist button")
 const pickScientistList = document.querySelector('.pick_scientist__list')
 
-console.log(buttonList);
 const scientists = [
 {
 name: "Albert",
@@ -98,22 +97,33 @@ const startsWithLetter = (str, letter) => {
 };
 
 function addScientists(arr) {
-  pickScientistList.innerHTML = ""; 
+  pickScientistList.innerHTML = "";
 
   arr.forEach(scientist => {
     const li = document.createElement("li");
-    li.className = "pick_scientist__list-item";
+    li.className = "pick_scientist__list-item flippable"; 
+
+    const imageName = scientist.surname.toLowerCase();
+    const imagePath = `../img/scientist-optimization/${imageName}-optimized.jpg`;
+
     li.innerHTML = `
-      <p class="pick_scientist__name" data-id="${scientist.id}">
-        ${scientist.name} ${scientist.surname} ${scientist.born}-${scientist.dead}
-      </p>
+      <div class="card-inner">
+        <div class="card-front">
+          <p class="pick_scientist__name" id="name-${scientist.id}" data-id="${scientist.id}">
+            ${scientist.name} ${scientist.surname} ${scientist.born}-${scientist.dead}
+          </p>
+        </div>
+        <div class="card-back">
+          <img src="${imagePath}" alt="${scientist.name} ${scientist.surname}" loading="lazy" />
+        </div>
+      </div>
     `;
-    pickScientistList.appendChild(li); 
+
+    pickScientistList.appendChild(li);
   });
 }
 
 addScientists(scientists);
-
 
 buttonList.forEach((item) => {
   item.addEventListener("click", (event) => {
@@ -164,12 +174,12 @@ buttonList.forEach((item) => {
         const findShortestLived = [...originalScientists].reduce((acc, curr) => {
         const accAge = acc.dead - acc.born;
         const currAge = curr.dead - curr.born;
-        return currAge < accAge ? curr : acc; // тернарник крута штука
+        return currAge < accAge ? curr : acc; 
     });
       arr.push(findLongestLived)
       arr.push(findShortestLived)
       addScientists(arr);
-    } else if(action === "match-initials") { // Знайти вчених, в яких співпадають перші літери імені і прізвища
+    } else if(action === "match-initials") { 
       const match = [...originalScientists].filter(({name, surname}) => {
         return name[0] === surname[0]
       })
@@ -187,4 +197,3 @@ buttonList.forEach((item) => {
     } 
   })
 })
-
