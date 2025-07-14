@@ -23,7 +23,19 @@
       width: 100px;
       height: 100px;
       background: #d9d9d9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+  }
+  &__name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 170%;
+    text-align: center;
+    color: #000;   
+    width: 65px;
   }
 
   &__actions {
@@ -73,4 +85,26 @@
   justify-content: center;
   width: 926px;
   gap: 36px;
+}
+
+#name-5 {
+  width: 84px;
+}
+#name-6 {
+  width: 84px;
+}
+#name-8 {
+  width: 78px; 
+}
+#name-12 {
+  width: 92px;
+}
+
+// js styles
+
+.visibility-1 {
+  opacity: 1;
+}
+.visibility-0 {
+  opacity: 0;
 }
