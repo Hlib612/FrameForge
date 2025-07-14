@@ -23,8 +23,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <script type="module" crossorigin src="/FrameForge/assets/index-5828f99a.js"></script>
-    <link rel="stylesheet" href="/FrameForge/assets/index-0cda53f3.css">
+    <script type="module" crossorigin src="/FrameForge/assets/index-d2fc9b8f.js"></script>
+    <link rel="stylesheet" href="/FrameForge/assets/index-c2cdcd76.css">
   </head>
   <body>
 
@@ -227,99 +227,83 @@
 
       <div class="pick_scientist">
   <h2 class="pick_scientist__title">Обери вченого/их</h2>
-
   <ul class="pick_scientist__list" id="pick_scientist-list">
-    <li class="pick_scientist__list-item">
-      <p class="pick_scientist__name" id="name-1" data-id="1">Albert Einshtein 1879-1955</p>
-    </li>
-    <li class="pick_scientist__list-item">
-      <p class="pick_scientist__name" id="name-2" data-id="2">Isaac Newton 1643-1727</p>
-    </li>
-    <li class="pick_scientist__list-item">
-      <p class="pick_scientist__name" id="name-3" data-id="3">Galileo Galilei 1564-1642</p>
-    </li>
-    <li class="pick_scientist__list-item">
-      <p class="pick_scientist__name" id="name-4" data-id="4">Marie Curie 1867-1934</p>
-    </li>
-    <li class="pick_scientist__list-item">
-      <p class="pick_scientist__name" id="name-5" data-id="5">Johannes Kepler 1571-1630</p>
-    </li>
-    <li class="pick_scientist__list-item">
-      <p class="pick_scientist__name" id="name-6" data-id="6">Nicolaus Copernicus 1473-1543</p>
-    </li>
-    <li class="pick_scientist__list-item">
-      <p class="pick_scientist__name" id="name-7" data-id="7">Max Planck 1858-1947</p>
-    </li>
-    <li class="pick_scientist__list-item">
-      <p class="pick_scientist__name" id="name-8" data-id="8">Katherine Blodgett 1898-1979</p>
-    </li>
-    <li class="pick_scientist__list-item">
-      <p class="pick_scientist__name" id="name-9" data-id="9">Ada Lovelace 1815-1852</p>
-    </li>
-    <li class="pick_scientist__list-item">
-      <p class="pick_scientist__name" id="name-10" data-id="10">Sarah E. Goode 1855-1905</p>
-    </li>
-    <li class="pick_scientist__list-item">
-      <p class="pick_scientist__name" id="name-11" data-id="11">Lise Meitner 1878-1968</p>
-    </li>
-    <li class="pick_scientist__list-item">
-      <p class="pick_scientist__name" id="name-12" data-id="12">Hanna Hammarström 1829-1909</p>
-    </li>
   </ul>
-
   <div id="pick-scientist__wrapper">
-      <!-- first group of buttons -->
-  <ul class="pick_scientist__actions pick_scientist__actions--group1">
-    <li class="pick_scientist__actions-item">
-      <button class="pick_scientist__button pick_scientist__button--born19" data-action="born-19th-century">
-        Які вчені народилися в 19 ст.
-      </button>
-    </li>
-    <li class="pick_scientist__actions-item">
-      <button class="pick_scientist__button pick_scientist__button--einstein" data-action="sort-alphabetically">
-        Відсортувати вчених за алфавітом
-      </button>
-    </li>
-    <li class="pick_scientist__actions-item">
-      <button class="pick_scientist__button pick_scientist__button--sort-alpha" data-action="sort-by-age">
-        Відсортувати вчених за кількістю прожитих років
-      </button>
-    </li>
-    <li class="pick_scientist__actions-item">
-      <button class="pick_scientist__button pick_scientist__button--surname-c" data-action="find-latest-born">
-        Знайти вченого, який народився найпізніше
-      </button>
-    </li>
-  </ul>
-
-  <!-- second group of buttons -->
-  <ul class="pick_scientist__actions pick_scientist__actions--group2">
-    <li class="pick_scientist__actions-item">
-      <button class="pick_scientist__button pick_scientist__button--sort-age" data-action="find-einstein-birthyear">
-        Знайти рік народження Albert Einshtein
-      </button>
-    </li>
-    <li class="pick_scientist__actions-item">
-      <button class="pick_scientist__button pick_scientist__button--remove-a" data-action="find-surnames-c">
-        Знайти вчених, прізвища яких починаються на літеру “С” 
-      </button>
-    </li>
-    <li class="pick_scientist__actions-item">
-      <button class="pick_scientist__button pick_scientist__button--latest-born" data-action="remove-names-a">
-        Видалити всіх вчених, ім’я яких починається на “А”
-      </button>
-    </li>
-    <li class="pick_scientist__actions-item">
-      <button class="pick_scientist__button pick_scientist__button--longest-shortest" data-action="find-longest-shortest-lived">
-        Знайти вченого, який прожив найдовше і вченого, 
-        який прожив найменше
-      </button>
-    </li>
-  </ul>
+    <ul class="pick_scientist__actions pick_scientist__actions--group1">
+      <li class="pick_scientist__actions-item">
+        <button
+          class="pick_scientist__button pick_scientist__button--born19"
+          data-action="born-19th-century"
+        >
+          Які вчені народилися в 19 ст.
+        </button>
+      </li>
+      <li class="pick_scientist__actions-item">
+        <button
+          class="pick_scientist__button pick_scientist__button--einstein"
+          data-action="sort-alphabetically"
+        >
+          Відсортувати вчених за алфавітом
+        </button>
+      </li>
+      <li class="pick_scientist__actions-item">
+        <button
+          class="pick_scientist__button pick_scientist__button--sort-alpha"
+          data-action="sort-by-age"
+        >
+          Відсортувати вчених за кількістю прожитих років
+        </button>
+      </li>
+      <li class="pick_scientist__actions-item">
+        <button
+          class="pick_scientist__button pick_scientist__button--surname-c"
+          data-action="find-latest-born"
+        >
+          Знайти вченого, який народився найпізніше
+        </button>
+      </li>
+    </ul>
+    <ul class="pick_scientist__actions pick_scientist__actions--group2">
+      <li class="pick_scientist__actions-item">
+        <button
+          class="pick_scientist__button pick_scientist__button--sort-age"
+          data-action="find-einstein-birthyear"
+        >
+          Знайти рік народження Albert Einshtein
+        </button>
+      </li>
+      <li class="pick_scientist__actions-item">
+        <button
+          class="pick_scientist__button pick_scientist__button--remove-a"
+          data-action="find-surnames-c"
+        >
+          Знайти вчених, прізвища яких починаються на літеру “С”
+        </button>
+      </li>
+      <li class="pick_scientist__actions-item">
+        <button
+          class="pick_scientist__button pick_scientist__button--latest-born"
+          data-action="remove-names-a"
+        >
+          Видалити всіх вчених, ім’я яких починається на “А”
+        </button>
+      </li>
+      <li class="pick_scientist__actions-item">
+        <button
+          class="pick_scientist__button pick_scientist__button--longest-shortest"
+          data-action="find-longest-shortest-lived"
+        >
+          Знайти вченого, який прожив найдовше і вченого, який прожив найменше
+        </button>
+      </li>
+    </ul>
   </div>
-  <!-- single button -->
   <div class="pick_scientist__actions pick_scientist__actions--fullwidth">
-    <button class="pick_scientist__button pick_scientist__button--initials-match" data-action="match-initials">
+    <button
+      class="pick_scientist__button pick_scientist__button--initials-match"
+      data-action="match-initials"
+    >
       1. Знайти вчених, в яких співпадають перші літери імені і прізвища
     </button>
   </div>
