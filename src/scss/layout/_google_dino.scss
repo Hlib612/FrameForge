@@ -1,1 +1,150 @@
 @use "../utils/variebles";
+@use "../utils/placeholders";
+
+.google-dino {
+    &::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    height: 1.8px;
+    width: 536px;
+    background-color: var(--buttons-background);
+  }
+  padding-bottom: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    &-container {
+    margin-bottom: 36px;
+    position: relative;
+    width: 720px;
+    height: 240px;
+    overflow: hidden;
+  }
+  &-title {
+    @extend %card-titles;
+    @extend %padding;
+  }
+    &-imageDino {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    width: 54px;
+    height: 54px;
+  }
+    &-ground {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    width: 200%; 
+    &-animated {
+      animation: moveGround 3s linear infinite;
+    }
+    &-img {
+        width: 50%;
+        height: auto;
+      }
+    }
+    &-score {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+    &-loseMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    position: absolute;
+    font-size: 14px;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);  
+  }
+  &-toStartText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 16px;
+    transform: translate(-50%, -50%);
+  }
+  &-cactus {
+    position: absolute;
+    bottom: 20px;
+    right: -50px; 
+    width: 30px;
+    height: 44px;
+  }
+  &-font-pixel {
+    font-family: 'Press Start 2P', cursive;
+  }
+  &-loseText-margin {
+    margin-bottom: 10px;
+  }
+}
+
+.ShowLoseMenu {
+  opacity: 1;
+}
+
+.cactus-move {
+  animation: moveCactus 4s linear infinite;
+}
+
+@keyframes moveGround {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes moveCactus {
+  0% {
+    right: -50px;
+  }
+  100% {
+    right: 800px; 
+    transform: translateX(-800px);
+  }
+}
+
+.jump {
+  animation: dinoJump 0.6s ease-out forwards;
+}
+
+@keyframes dinoJump {
+  0% {
+    bottom: 20px;
+  }
+  30% {
+    bottom: 130px;
+  }
+  50% {
+    bottom: 140px;
+  }
+  70% {
+    bottom: 130px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
