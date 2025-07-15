@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
   
   .calc-time-h2 {
@@ -70,17 +71,20 @@
   fill:none;
 }
 
-.search-button-svg:hover{
-stroke: black;
-fill: none;
-transition: 0.1s;
-transform: scale(1.5);
-}
- .search-button:hover{
-  background-color: #e7e5e5;
- }
+.search-button:hover .search-button-svg {
+  stroke: rgb(255, 255, 255);
+  fill: none;
+  transition: 0.1s;
+  transform: scale(1.5);
+  }
 
 .calc-time-result{
   display: flex;
   color: var(--main--test--color);
+ 
+}
+
+.calc-time-element{
+  display: flex;
+  align-items: center;
 }
