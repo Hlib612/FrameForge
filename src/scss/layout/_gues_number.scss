@@ -1,6 +1,8 @@
 @use '../utils/variebles';
 @use '../utils/placeholders';
+
 .gues_mumber {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,13 +29,16 @@
   &_glue_div {
     position: relative;
   }
+
   &_input {
     padding: 10px 45px 10px 10px;
     @include placeholders.input_basic(150px);
   }
+
   &_input::placeholder {
     @extend %plaseholders_basic;
   }
+
   &_submit_button {
     position: absolute;
     right: 0;
@@ -46,12 +51,20 @@
     background-color: var(--buttons-background);
     border: none;
   }
+
   &_submit_button:hover {
-    background-color: var(--placeholders-color);
-    //   .gues_mumber_svg{
-    //     fill: var(--buttons-background);
-    // }
+        width: 39px;
+    background-color: #7e7e7e;
   }
+
+  &_svg{
+    @extend %search_svg;
+  }
+
+    &_submit_button:hover .gues_mumber_svg{
+        @extend %search_svg_hover;
+  }
+  
   &_responde {
     display: block;
     max-width: 250px;
@@ -70,4 +83,5 @@
   &::after {
     @extend %line;
   }
+
 }

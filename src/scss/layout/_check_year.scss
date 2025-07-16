@@ -73,12 +73,15 @@
   &_svg {
     @extend %search_svg;
   }
+
   &_submit_button:hover .check_year_svg {
     @extend %search_svg_hover;
   }
+
   &_submit_button:hover .check_year_path {
     fill: var(--buttons-background);
   }
+
   &_responde {
     display: block;
     max-width: 250px;
@@ -93,7 +96,9 @@
       margin-left: 36px;
     }
   }
+
   &::after {
     @extend %line;
   }
+  
 }
