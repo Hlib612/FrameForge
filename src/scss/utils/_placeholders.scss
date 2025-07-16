@@ -56,3 +56,22 @@
     width: 300px;
   }
 }
+
+%search_svg{
+      transition: width 1s linear;
+    transition: height 1s linear;
+    transition: stroke 0.2s linear;
+    width: 16px;
+    height: 16px;
+    stroke: white;
+    fill: none;
+}
+
+%search_svg_hover{
+    transition: width 1s linear;
+    transition: height 1s linear;
+    transition: stroke 0.2s linear;
+    width: 20px;
+    height: 20px;
+    stroke: var(--buttons-background);
+}
