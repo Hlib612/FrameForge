@@ -18,8 +18,8 @@
   &_geometry_div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
+    justify-content: space-evenly;
+    align-items: center;
     @extend %padding;
     @media screen and (max-width: 480px) {
       align-items: center;
@@ -64,7 +64,24 @@
     &_submit_button:hover .gues_mumber_svg{
         @extend %search_svg_hover;
   }
-  
+
+  &_reaset_button{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+  }
+
+  &_hardmode_button{
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 153, 0);
+    background-color: rgb(204, 6, 6);
+    color: rgb(255, 153, 0);
+    font-weight: 600;
+  }
+
   &_responde {
     display: block;
     max-width: 250px;

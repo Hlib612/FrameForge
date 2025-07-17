@@ -1,4 +1,4 @@
-const inputs = document.querySelector('.biggest-number-input');
+const inputs = document.querySelectorAll('.biggest-number-input');
 const result = document.querySelector('.biggest-number-p');
 
 inputs.forEach(input => {
