@@ -2,10 +2,9 @@
 @use '../utils/placeholders';
 
 .gues_mumber {
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   @extend %basic_margin;
 
@@ -23,6 +22,8 @@
     @extend %padding;
     @media screen and (max-width: 480px) {
       align-items: center;
+      flex-wrap: wrap;
+      row-gap: 20px;
     }
   }
 
@@ -53,52 +54,206 @@
   }
 
   &_submit_button:hover {
-        width: 39px;
+    width: 39px;
     background-color: #7e7e7e;
   }
 
-  &_svg{
+  &_svg {
     @extend %search_svg;
   }
 
-    &_submit_button:hover .gues_mumber_svg{
-        @extend %search_svg_hover;
+  &_submit_button:hover .gues_mumber_svg {
+    @extend %search_svg_hover;
   }
 
-  &_reaset_button{
+  &_reaset_button {
     width: 32px;
     height: 32px;
+    margin-left: 60px;
     border-radius: 50%;
     border: none;
+    background-color: var(--main--bg--color);
+    @media screen and (max-width: 768px) {
+      margin-left: 44px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-left: 10px;
+    }
   }
 
-  &_hardmode_button{
+   &_reaset_button:hover {
+    transform: rotate(360deg);
+    transition-property: transform;
+    transition-duration: 1000ms;
+    transition-timing-function: linear;
+    transition-delay: 100ms;
+
+  }
+
+  &_hardmode_button {
     width: 120px;
     height: 35px;
+    margin-left: 60px;
     border-radius: 20px;
     border: 2px solid rgb(255, 153, 0);
     background-color: rgb(204, 6, 6);
     color: rgb(255, 153, 0);
     font-weight: 600;
+    animation-name: blick;
+    animation-duration: 3600ms;
+    animation-iteration-count: infinite;
+    animation-delay: 2000ms;
+    @media screen and (max-width: 768px) {
+      margin-left: 44px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-left: 10px;
+    }
+  }
+
+  @keyframes blick {
+  0% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 85%, rgba(230, 230, 230, 1) 94%, rgba(204, 6, 6, 1) 100%);
+  }
+
+  3% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 90%, rgba(230, 230, 230, 1) 94%, rgba(204, 6, 6, 1) 96%);
+  }
+
+    6% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 85%, rgba(230, 230, 230, 1) 92%, rgba(204, 6, 6, 1) 99%);
+  }
+
+    9% {
+   background: linear-gradient(90deg,rgba(204, 6, 6, 1) 78%, rgba(230, 230, 230, 1) 90%, rgba(204, 6, 6, 1) 98%);
+  }
+
+    12% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 73%, rgba(230, 230, 230, 1) 85%, rgba(204, 6, 6, 1) 100%);
+  }
+
+  15% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 67%, rgba(230, 230, 230, 1) 81%, rgba(204, 6, 6, 1) 96%);
+  }
+
+  19% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 67%, rgba(230, 230, 230, 1) 75%, rgba(204, 6, 6, 1) 87%);;
+  }
+
+  23% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 56%, rgba(230, 230, 230, 1) 75%, rgba(204, 6, 6, 1) 84%);
+  }
+
+  27% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 56%, rgba(230, 230, 230, 1) 68%, rgba(204, 6, 6, 1) 80%);;
+  }
+
+  30% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 52%, rgba(230, 230, 230, 1) 64%, rgba(204, 6, 6, 1) 79%);
+  }
+
+  33% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 49%, rgba(230, 230, 230, 1) 60%, rgba(204, 6, 6, 1) 76%);
+  }
+
+  36% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 49%, rgba(230, 230, 230, 1) 60%, rgba(204, 6, 6, 1) 66%);
+  }
+
+    39% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 45%, rgba(230, 230, 230, 1) 53%, rgba(204, 6, 6, 1) 66%);
+  }
+
+    42% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 41%, rgba(230, 230, 230, 1) 52%, rgba(204, 6, 6, 1) 60%);
+  }
+
+    45% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 38%, rgba(230, 230, 230, 1) 47%, rgba(204, 6, 6, 1) 60%);
+  }
+
+    48% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 35%, rgba(230, 230, 230, 1) 47%, rgba(204, 6, 6, 1) 54%);
+  }
+
+    51% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 32%, rgba(230, 230, 230, 1) 42%, rgba(204, 6, 6, 1) 50%);
+  }
+
+    54% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 28%, rgba(230, 230, 230, 1) 39%, rgba(204, 6, 6, 1) 50%);
+  }
+
+      57% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 23%, rgba(230, 230, 230, 1) 38%, rgba(204, 6, 6, 1) 50%);
+  }
+
+      60% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 22%, rgba(230, 230, 230, 1) 34%, rgba(204, 6, 6, 1) 43%);
+  }
+
+      63% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 17%, rgba(230, 230, 230, 1) 32%, rgba(204, 6, 6, 1) 43%);
+  }
+
+        67% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 15%, rgba(230, 230, 230, 1) 28%, rgba(204, 6, 6, 1) 34%);
+  }
+
+        71% {
+   background: linear-gradient(90deg,rgba(204, 6, 6, 1) 15%, rgba(230, 230, 230, 1) 23%, rgba(204, 6, 6, 1) 34%);
+  }
+
+          75% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 11%, rgba(230, 230, 230, 1) 23%, rgba(204, 6, 6, 1) 30%);
+  }
+
+          79% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 11%, rgba(230, 230, 230, 1) 18%, rgba(204, 6, 6, 1) 30%);
+  }
+
+          84% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 7%, rgba(230, 230, 230, 1) 15%, rgba(204, 6, 6, 1) 25%);
+  }
+
+          88% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 7%, rgba(230, 230, 230, 1) 13%, rgba(204, 6, 6, 1) 19%);
+  }
+
+            90% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 1%, rgba(230, 230, 230, 1) 7%, rgba(204, 6, 6, 1) 14%);
+  }
+
+              91% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 1%, rgba(230, 230, 230, 1) 7%, rgba(204, 6, 6, 1) 14%);
+  }
+
+              100% {
+    background: linear-gradient(90deg,rgba(204, 6, 6, 1) 1%, rgba(204, 6, 6, 1) 7%, rgba(204, 6, 6, 1) 14%);
+  }
+}
+    &_hardmode_button:hover {
+      background-color: rgb(255, 153, 0);
+      color: rgb(204, 6, 6);
+      border: 2px solid rgb(204, 6, 6);
   }
 
   &_responde {
     display: block;
     max-width: 250px;
-    margin-left: 202px;
+    margin-left: 60px;
     font-weight: 400;
     font-size: 12px;
     color: var(--main--test--color);
     @media screen and (max-width: 768px) {
-      margin-left: 160px;
+      margin-left: 44px;
     }
     @media screen and (max-width: 480px) {
-      margin-left: 76px;
+      margin-left: 10px;
     }
   }
 
   &::after {
     @extend %line;
   }
-
 }
