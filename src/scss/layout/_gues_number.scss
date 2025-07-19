@@ -102,7 +102,7 @@
     animation-name: blick;
     animation-duration: 3600ms;
     animation-iteration-count: infinite;
-    animation-delay: 2000ms;
+    animation-delay: 1300ms;
     @media screen and (max-width: 768px) {
       margin-left: 44px;
     }
@@ -232,10 +232,44 @@
     background: linear-gradient(90deg,rgba(204, 6, 6, 1) 1%, rgba(204, 6, 6, 1) 7%, rgba(204, 6, 6, 1) 14%);
   }
 }
+
+@keyframes shake {
+
+            0% {
+    transform: rotate(5deg);
+  }
+
+            10% {
+    transform: rotate(-5deg);
+  }
+
+              20% {
+    transform: rotate(5deg);
+  }
+
+              30% {
+    transform: rotate(-5deg);
+  }
+
+              40% {
+    transform: rotate(5deg);
+  }
+
+            50% {
+    transform: rotate(-5deg);
+  }
+
+            100% {
+    transform: rotate(5deg);
+}
+}
+
     &_hardmode_button:hover {
-      background-color: rgb(255, 153, 0);
-      color: rgb(204, 6, 6);
-      border: 2px solid rgb(204, 6, 6);
+     animation-name: shake;
+     animation-duration: 2000ms;
+     animation-iteration-count: 1;
+     animation-delay: 100ms;
+     
   }
 
   &_responde {
