@@ -241,7 +241,7 @@ restartDinoButton.addEventListener("click", function () {
 
 const onKeyUpStart = function (event) {
   event.preventDefault();
-  if (event.code === "Space" || event.code === "ArrowUp" || event.code === "KeyR") {
+  if (event.code === "Space" || event.code === "ArrowUp" || event.code === "KeyR" ) {
     if (!isGameRunning) {
       startGame();
     }
@@ -253,6 +253,22 @@ document.addEventListener("keyup", onKeyUpStart);
 document.addEventListener("touchstart", () => {
   if (!isGameRunning) {
     startGame();
+  }
+});
+
+document.addEventListener('touchstart', function() {
+  if (isGameRunning && !isJumping) {
+    isJumping = true;
+    stopRunAnimation();
+    dino.src = dinoStationaryImg;
+    dino.classList.add("jump");
+    setTimeout(() => {
+      dino.classList.remove("jump");
+      if (isGameRunning) {
+        runAnimationDino();
+      }
+      isJumping = false;
+    }, 600);
   }
 });
 
