@@ -16,8 +16,8 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script type="module" crossorigin src="/FrameForge/assets/index-c7977c97.js"></script>
-    <link rel="stylesheet" href="/FrameForge/assets/index-8c735846.css">
+    <script type="module" crossorigin src="/FrameForge/assets/index-72137ecb.js"></script>
+    <link rel="stylesheet" href="/FrameForge/assets/index-1aceff64.css">
   </head>
   <body>
 
@@ -143,17 +143,19 @@
     </ul>
     <!--  -->
     <div class="scissors_paper_result_list">
-      <p class="scissors_paper_result_list_title">Рахунок:</p>
-      <li class="scissors_paper_result_list_item" id="computerWinsCounter">
-        Комп’ютер - 0
-      </li>
-      <li class="scissors_paper_result_list_item" id="userWinsCounter">
-        Ви - 0
-      </li>
+      <ul>
+        <p class="scissors_paper_result_list_title">Рахунок:</p>
+        <li class="scissors_paper_result_list_item" id="computerWinsCounter">
+          Комп’ютер - 0
+        </li>
+        <li class="scissors_paper_result_list_item" id="userWinsCounter">
+          Ви - 0
+        </li>        
+      </ul>
     </div>
   </div>
   <!--  -->
-  <p class="gameResult" id="gameResult">Ви виграли раунд!</p>
+  <div><p class="gameResult" id="gameResult">Ви виграли раунд!</p></div>
   <!--  -->
   <div class="button-wrapper">
     <button class="scissors_paper-button" id="computerChoiceBtn">
@@ -218,21 +220,22 @@
       <div class="google-dino">
   <h2 class="google-dino-title">Google динозавр</h2>
   <div class="google-dino-container">
+    <div class="google-dino-restart-button"><img src="../img/dino-images/restart_button.png" alt="restart_button"></div>
     <div class="google-dino-score google-dino-font-pixel">0</div>
     <p class="google-dino-toStartText google-dino-font-pixel" id="toStartText">Press "Space" To Start</p>
-    <img src="/FrameForge/assets/dino-stationary-997a5dc6.png" alt="dino" id="dino" class="google-dino-imageDino" >
+    <img src="/FrameForge/assets/dino-stationary-997a5dc6.png" alt="dino" id="dino" class="google-dino-imageDino" />
     <div class="google-dino-ground" id="ground">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACV8AAAAYCAYAAADnXB+kAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpVIqDu0g4pChOlkQFXHUKhShQqgVWnUweekfNGlIUlwcBdeCgz+LVQcXZ10dXAVB8AfEydFJ0UVKvC8ptIjxhkc+zrvn8N59gNCsMs3qGQc03TYzqaSYy6+KoVeEEUCUvkGZWcacJKXhW1/31Et1l+BZ/n1/Vr9asBgQEIlnmWHaxBvE05u2wXmfOMbKskp8Tjxm0gGJH7muePzGueSywDNjZjYzTxwjFktdrHQxK5sa8RRxXNV0yhdyHquctzhr1Tprn5PfMFLQV5a5TmsYKSxiCRJEKKijgipsJOivk2IhQ/tJH/+Q65fIpZCrAkaOBdSgQXb94G/we7ZWcXLCS4okgd4Xx/kYAUK7QKvhON/HjtM6AYLPwJXe8deawMwn6Y2OFj8CBraBi+uOpuwBlzvA4JMhm7IrBWkJxSLwfkbPlAeit0B4zZtbex+nD0CWZpW+AQ4OgdESZa/73Luve27/9rTn9wMgjHKG6ip4oAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+QKARMeL9L9k18AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAACkUlEQVR42u3cS26EMAwA0KZXDMecOzIrNkhUxZD/e/uqA9iOg4jTvu8/AAAAAAAwqm3bbr/o/nw+yZ0DANAH+v3AU79uAQAAAAAAAAAAwH3J5CsAAAAAAEZ0nhTwnykAkb8BAEAf6PcDV0y+AgAAAAAAAAAACDD5CgAAAACAIZxP+x8ip/5NDgAA0AfW6gP1sTA3k68AAAAAAAAAAAACTL4CAAAAAKBrJU/3vzmFAAAAfaA+FtZj8hUAAAAAAAAAAEBAyjkbfQUAAAAAQPdqnOK/miAw47X2ds0AALP2gSv1sbAik68AAAAAAAAAAAAC0r77+BEAAAAAAFq7mlZQYlJCzf8FAAAwM5OvAAAAAAAAAAAAAky+AgAAAACAzlxNpirBtCsAAIA4k68AAAAAAAAAAAACTL4a1NWpJyeUWDn+5QHqKmA9AQDrHfZZoP6irgLWEwCw3tVk8hUAAAAAAAAAAEDA7clXvrCmhSPuWsfXOf7FO+Jv3XrgulFX6D0/nYieM089R8+V8nW79vooHureV/eXFfpCfT7iTz1w3agrjJKf9kNz7788R8+VcnXb+6v+mHwFAAAAAAAAAAAQcHvyFQCszAk+xAf0mXcH+Yf6/zyP5BMAgP4U8QGU23fLP9T/53kkn+iNyVcAAAAAAAAAAAABJl+9ZJWTAr1/mX31xWuvv1dcULKO+AKcmvHZug6IdwB9I8gvEwwQJ6OsN95fiQt1xH6eNvHp/RUA+kaYaz/RE5OvAAAAAAAAAAAAAlLOuepJK1+K/n0/St9/1ogncQPASH2PdYuZ+m/9GPJLfbcfLfPca78/Ec9t7z/qBQD01vdYt5ip/9aPIb/Ud/vR95+7yVcAAAAAAAAAAAABX/6Z8AvqXAOiAAAAAElFTkSuQmCC" alt="dino" class="google-dino-ground-img" >
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACV8AAAAYCAYAAADnXB+kAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpVIqDu0g4pChOlkQFXHUKhShQqgVWnUweekfNGlIUlwcBdeCgz+LVQcXZ10dXAVB8AfEydFJ0UVKvC8ptIjxhkc+zrvn8N59gNCsMs3qGQc03TYzqaSYy6+KoVeEEUCUvkGZWcacJKXhW1/31Et1l+BZ/n1/Vr9asBgQEIlnmWHaxBvE05u2wXmfOMbKskp8Tjxm0gGJH7muePzGueSywDNjZjYzTxwjFktdrHQxK5sa8RRxXNV0yhdyHquctzhr1Tprn5PfMFLQV5a5TmsYKSxiCRJEKKijgipsJOivk2IhQ/tJH/+Q65fIpZCrAkaOBdSgQXb94G/we7ZWcXLCS4okgd4Xx/kYAUK7QKvhON/HjtM6AYLPwJXe8deawMwn6Y2OFj8CBraBi+uOpuwBlzvA4JMhm7IrBWkJxSLwfkbPlAeit0B4zZtbex+nD0CWZpW+AQ4OgdESZa/73Luve27/9rTn9wMgjHKG6ip4oAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+QKARMeL9L9k18AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAACkUlEQVR42u3cS26EMAwA0KZXDMecOzIrNkhUxZD/e/uqA9iOg4jTvu8/AAAAAAAwqm3bbr/o/nw+yZ0DANAH+v3AU79uAQAAAAAAAAAAwH3J5CsAAAAAAEZ0nhTwnykAkb8BAEAf6PcDV0y+AgAAAAAAAAAACDD5CgAAAACAIZxP+x8ip/5NDgAA0AfW6gP1sTA3k68AAAAAAAAAAAACTL4CAAAAAKBrJU/3vzmFAAAAfaA+FtZj8hUAAAAAAAAAAEBAyjkbfQUAAAAAQPdqnOK/miAw47X2ds0AALP2gSv1sbAik68AAAAAAAAAAAAC0r77+BEAAAAAAFq7mlZQYlJCzf8FAAAwM5OvAAAAAAAAAAAAAky+AgAAAACAzlxNpirBtCsAAIA4k68AAAAAAAAAAAACTL4a1NWpJyeUWDn+5QHqKmA9AQDrHfZZoP6irgLWEwCw3tVk8hUAAAAAAAAAAEDA7clXvrCmhSPuWsfXOf7FO+Jv3XrgulFX6D0/nYieM089R8+V8nW79vooHureV/eXFfpCfT7iTz1w3agrjJKf9kNz7788R8+VcnXb+6v+mHwFAAAAAAAAAAAQcHvyFQCszAk+xAf0mXcH+Yf6/zyP5BMAgP4U8QGU23fLP9T/53kkn+iNyVcAAAAAAAAAAAABJl+9ZJWTAr1/mX31xWuvv1dcULKO+AKcmvHZug6IdwB9I8gvEwwQJ6OsN95fiQt1xH6eNvHp/RUA+kaYaz/RE5OvAAAAAAAAAAAAAlLOuepJK1+K/n0/St9/1ogncQPASH2PdYuZ+m/9GPJLfbcfLfPca78/Ec9t7z/qBQD01vdYt5ip/9aPIb/Ud/vR95+7yVcAAAAAAAAAAAABX/6Z8AvqXAOiAAAAAElFTkSuQmCC" alt="dino" class="google-dino-ground-img" >
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACV8AAAAYCAYAAADnXB+kAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpVIqDu0g4pChOlkQFXHUKhShQqgVWnUweekfNGlIUlwcBdeCgz+LVQcXZ10dXAVB8AfEydFJ0UVKvC8ptIjxhkc+zrvn8N59gNCsMs3qGQc03TYzqaSYy6+KoVeEEUCUvkGZWcacJKXhW1/31Et1l+BZ/n1/Vr9asBgQEIlnmWHaxBvE05u2wXmfOMbKskp8Tjxm0gGJH7muePzGueSywDNjZjYzTxwjFktdrHQxK5sa8RRxXNV0yhdyHquctzhr1Tprn5PfMFLQV5a5TmsYKSxiCRJEKKijgipsJOivk2IhQ/tJH/+Q65fIpZCrAkaOBdSgQXb94G/we7ZWcXLCS4okgd4Xx/kYAUK7QKvhON/HjtM6AYLPwJXe8deawMwn6Y2OFj8CBraBi+uOpuwBlzvA4JMhm7IrBWkJxSLwfkbPlAeit0B4zZtbex+nD0CWZpW+AQ4OgdESZa/73Luve27/9rTn9wMgjHKG6ip4oAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+QKARMeL9L9k18AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAACkUlEQVR42u3cS26EMAwA0KZXDMecOzIrNkhUxZD/e/uqA9iOg4jTvu8/AAAAAAAwqm3bbr/o/nw+yZ0DANAH+v3AU79uAQAAAAAAAAAAwH3J5CsAAAAAAEZ0nhTwnykAkb8BAEAf6PcDV0y+AgAAAAAAAAAACDD5CgAAAACAIZxP+x8ip/5NDgAA0AfW6gP1sTA3k68AAAAAAAAAAAACTL4CAAAAAKBrJU/3vzmFAAAAfaA+FtZj8hUAAAAAAAAAAEBAyjkbfQUAAAAAQPdqnOK/miAw47X2ds0AALP2gSv1sbAik68AAAAAAAAAAAAC0r77+BEAAAAAAFq7mlZQYlJCzf8FAAAwM5OvAAAAAAAAAAAAAky+AgAAAACAzlxNpirBtCsAAIA4k68AAAAAAAAAAAACTL4a1NWpJyeUWDn+5QHqKmA9AQDrHfZZoP6irgLWEwCw3tVk8hUAAAAAAAAAAEDA7clXvrCmhSPuWsfXOf7FO+Jv3XrgulFX6D0/nYieM089R8+V8nW79vooHureV/eXFfpCfT7iTz1w3agrjJKf9kNz7788R8+VcnXb+6v+mHwFAAAAAAAAAAAQcHvyFQCszAk+xAf0mXcH+Yf6/zyP5BMAgP4U8QGU23fLP9T/53kkn+iNyVcAAAAAAAAAAAABJl+9ZJWTAr1/mX31xWuvv1dcULKO+AKcmvHZug6IdwB9I8gvEwwQJ6OsN95fiQt1xH6eNvHp/RUA+kaYaz/RE5OvAAAAAAAAAAAAAlLOuepJK1+K/n0/St9/1ogncQPASH2PdYuZ+m/9GPJLfbcfLfPca78/Ec9t7z/qBQD01vdYt5ip/9aPIb/Ud/vR95+7yVcAAAAAAAAAAAABX/6Z8AvqXAOiAAAAAElFTkSuQmCC" alt="dino" class="google-dino-ground-img" />
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACV8AAAAYCAYAAADnXB+kAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpVIqDu0g4pChOlkQFXHUKhShQqgVWnUweekfNGlIUlwcBdeCgz+LVQcXZ10dXAVB8AfEydFJ0UVKvC8ptIjxhkc+zrvn8N59gNCsMs3qGQc03TYzqaSYy6+KoVeEEUCUvkGZWcacJKXhW1/31Et1l+BZ/n1/Vr9asBgQEIlnmWHaxBvE05u2wXmfOMbKskp8Tjxm0gGJH7muePzGueSywDNjZjYzTxwjFktdrHQxK5sa8RRxXNV0yhdyHquctzhr1Tprn5PfMFLQV5a5TmsYKSxiCRJEKKijgipsJOivk2IhQ/tJH/+Q65fIpZCrAkaOBdSgQXb94G/we7ZWcXLCS4okgd4Xx/kYAUK7QKvhON/HjtM6AYLPwJXe8deawMwn6Y2OFj8CBraBi+uOpuwBlzvA4JMhm7IrBWkJxSLwfkbPlAeit0B4zZtbex+nD0CWZpW+AQ4OgdESZa/73Luve27/9rTn9wMgjHKG6ip4oAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+QKARMeL9L9k18AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAACkUlEQVR42u3cS26EMAwA0KZXDMecOzIrNkhUxZD/e/uqA9iOg4jTvu8/AAAAAAAwqm3bbr/o/nw+yZ0DANAH+v3AU79uAQAAAAAAAAAAwH3J5CsAAAAAAEZ0nhTwnykAkb8BAEAf6PcDV0y+AgAAAAAAAAAACDD5CgAAAACAIZxP+x8ip/5NDgAA0AfW6gP1sTA3k68AAAAAAAAAAAACTL4CAAAAAKBrJU/3vzmFAAAAfaA+FtZj8hUAAAAAAAAAAEBAyjkbfQUAAAAAQPdqnOK/miAw47X2ds0AALP2gSv1sbAik68AAAAAAAAAAAAC0r77+BEAAAAAAFq7mlZQYlJCzf8FAAAwM5OvAAAAAAAAAAAAAky+AgAAAACAzlxNpirBtCsAAIA4k68AAAAAAAAAAAACTL4a1NWpJyeUWDn+5QHqKmA9AQDrHfZZoP6irgLWEwCw3tVk8hUAAAAAAAAAAEDA7clXvrCmhSPuWsfXOf7FO+Jv3XrgulFX6D0/nYieM089R8+V8nW79vooHureV/eXFfpCfT7iTz1w3agrjJKf9kNz7788R8+VcnXb+6v+mHwFAAAAAAAAAAAQcHvyFQCszAk+xAf0mXcH+Yf6/zyP5BMAgP4U8QGU23fLP9T/53kkn+iNyVcAAAAAAAAAAAABJl+9ZJWTAr1/mX31xWuvv1dcULKO+AKcmvHZug6IdwB9I8gvEwwQJ6OsN95fiQt1xH6eNvHp/RUA+kaYaz/RE5OvAAAAAAAAAAAAAlLOuepJK1+K/n0/St9/1ogncQPASH2PdYuZ+m/9GPJLfbcfLfPca78/Ec9t7z/qBQD01vdYt5ip/9aPIb/Ud/vR95+7yVcAAAAAAAAAAAABX/6Z8AvqXAOiAAAAAElFTkSuQmCC" alt="dino" class="google-dino-ground-img" />
     </div>
-    <img src="data:image/png;base64,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" alt="cactus" class="google-dino-cactus" id="cactus">
+    <div id="obstacles" class="google-dino-obstacles"></div>
     <div class="google-dino-loseMenu" id="loseMenu">
         <p class="loseText google-dino-font-pixel google-dino-loseText-margin">You Losed</p>
-        <p class="loseText google-dino-font-pixel">Press "R" To Retart</p>
+        <p class="loseText google-dino-font-pixel google-dino-loseText-margin">Press "R" To Restart</p>
+        <p class="loseText google-dino-font-pixel showRestartBtnText">Or Restart Button</p>
     </div>
   </div>
 </div>
-
       <div class="football">
         <h2 class="football_title">Футбол</h2>
         <div class="football_field">
@@ -284,85 +287,23 @@
 
       <div class="pick_scientist">
   <h2 class="pick_scientist__title">Обери вченого/их</h2>
-  <ul class="pick_scientist__list" id="pick_scientist-list">
-  </ul>
-  <div id="pick-scientist__wrapper">
+  <ul class="pick_scientist__list" id="pick_scientist-list"></ul>
+  <div id="pick-scientist__wrapper" class="pick_scientist__wrapper">
     <ul class="pick_scientist__actions pick_scientist__actions--group1">
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--born19"
-          data-action="born-19th-century"
-        >
-          Які вчені народилися в 19 ст.
-        </button>
-      </li>
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--einstein"
-          data-action="sort-alphabetically"
-        >
-          Відсортувати вчених за алфавітом
-        </button>
-      </li>
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--sort-alpha"
-          data-action="sort-by-age"
-        >
-          Відсортувати вчених за кількістю прожитих років
-        </button>
-      </li>
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--surname-c"
-          data-action="find-latest-born"
-        >
-          Знайти вченого, який народився найпізніше
-        </button>
-      </li>
+      <li><button class="pick_scientist__button" data-action="born-19th-century">Які вчені народилися в 19 ст.</button></li>
+      <li><button class="pick_scientist__button" data-action="sort-alphabetically">Відсортувати вчених за алфавітом</button></li>
+      <li><button class="pick_scientist__button" data-action="sort-by-age">Відсортувати вчених за кількістю прожитих років</button></li>
+      <li><button class="pick_scientist__button" data-action="find-latest-born">Знайти вченого, який народився найпізніше</button></li>
     </ul>
     <ul class="pick_scientist__actions pick_scientist__actions--group2">
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--sort-age"
-          data-action="find-einstein-birthyear"
-        >
-          Знайти рік народження Albert Einshtein
-        </button>
-      </li>
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--remove-a"
-          data-action="find-surnames-c"
-        >
-          Знайти вчених, прізвища яких починаються на літеру “С”
-        </button>
-      </li>
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--latest-born"
-          data-action="remove-names-a"
-        >
-          Видалити всіх вчених, ім’я яких починається на “А”
-        </button>
-      </li>
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--longest-shortest"
-          data-action="find-longest-shortest-lived"
-        >
-          Знайти вченого, який прожив найдовше і вченого, який прожив найменше
-        </button>
-      </li>
+      <li><button class="pick_scientist__button" data-action="find-einstein-birthyear">Знайти рік народження Albert Einshtein</button></li>
+      <li><button class="pick_scientist__button" data-action="find-surnames-c">Знайти вчених, прізвища яких починаються на літеру “С”</button></li>
+      <li><button class="pick_scientist__button" data-action="remove-names-a">Видалити всіх вчених, ім’я яких починається на “А”</button></li>
+      <li><button class="pick_scientist__button" data-action="find-longest-shortest-lived">Знайти вченого, який прожив найдовше і найменше</button></li>
     </ul>
   </div>
   <div class="pick_scientist__actions pick_scientist__actions--fullwidth">
-    <button
-      class="pick_scientist__button pick_scientist__button--initials-match"
-      data-action="match-initials"
-    >
-      1. Знайти вчених, в яких співпадають перші літери імені і прізвища
-    </button>
+    <button class="pick_scientist__button" data-action="match-initials">1. Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
   </div>
 </div>
 
@@ -376,7 +317,7 @@
       <a href="../index.html"><img src="/FrameForge/assets/logo-35ae659c.svg" alt="logotype"></a>
     </div>
     <ul class="footer-list">
-      <li class="footer-list-item"><a href="tel:+38 (123) 456 78 90">Тел: +38 (123) 456 78 90</a></li>
+      <li class="footer-list-item"><a href="tel:+381234567890">Тел: +38 (123) 456 78 90</a></li>
       <li class="footer-list-item"><a href="mailto:codingmagic@gmail.com">codingmagic@gmail.com</a></li>
       <li class="footer-list-item"><a href="#">Facebook: CodingMagic</a></li>
       <li class="footer-list-item"><a href="#">Twitter: CodingMagic</a></li>
