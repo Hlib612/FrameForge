@@ -1,6 +1,6 @@
 const scientistGameList = document.querySelectorAll(".pick_scientist__list li > p")
 const buttonList = document.querySelectorAll(".pick_scientist button")
-const pickScientistList = document.querySelector('.pick_scientist__list')
+const pickScientistList = document.querySelector('#pick_scientist-list')
 
 const scientists = [
 {
@@ -104,7 +104,7 @@ function addScientists(arr) {
     li.className = "pick_scientist__list-item flippable"; 
 
     const imageName = scientist.surname.toLowerCase();
-    const imagePath = `../img/scientist-optimization/${imageName}-optimized.jpg`;
+    const imagePath = `./img/scientist-optimization/${imageName}-optimized.jpg`;
 
     li.innerHTML = `
       <div class="card-inner">
