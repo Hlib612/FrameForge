@@ -31,14 +31,14 @@ const refreshInputTextContent = event => {
  UserNameInputContent = UserNameInput.value;
  console.log(UserNameInputContent);
 };
-
+ console.log(UserNameInputContent);
 closeModalButton.addEventListener('click', onButtonModalClose);
 
 backDrop.addEventListener('click', onBackDropClick);
 console.log(UserNameInput.textContent)
 const changeUserName = event => {
     event.preventDefault();
-    if(UserNameInputContent.textContent === '0'){
+    if(UserNameInputContent === 0){
        UserName.textContent = 'User' ;
     } else {
         UserName.textContent = `.${UserNameInputContent}.`;
