@@ -3,6 +3,9 @@
 
 
 .scissors_paper {
+  position: relative;
+  @extend %padding;
+
   &::after {
     content: "";
     display: block;
@@ -10,52 +13,102 @@
     height: 1.8px;
     width: 536px;
     background-color: var(--buttons-background);
+
+    @media (max-width: 780px) {
+      width: 90%;
+    }
   }
-  position: relative;
-  @extend %padding;
-  &-title{
+
+  @media (max-width: 780px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &-title {
     @extend %card-titles;
     @extend %padding;
     text-align: center;
+    font-size: 24px;
+
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
   }
+
   &-list {
     display: flex;
     gap: 20px;
-    list-style: none;
     justify-content: center;
+    list-style: none;
     @extend %gap;
     @extend %padding;
+
+    @media (max-width: 480px) {
+      gap: 10px;
+    }
+
     &-item {
+      cursor: pointer;
+      width: 60px;
+      height: 60px;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: black;
       transition: box-shadow 0.5s linear, background-color 0.5s linear;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       &:hover {
         box-shadow: 4px 3px 0 0 rgba(77, 77, 77, 0.1);
         background-color: #333333;
       }
-      cursor: pointer;
-      padding: 10px;
-      width: 60px;
-      height: 60px;
-      border-radius: 20px;
-      background-color: black;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 480px) {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+      }
     }
   }
+
   &-button {
-    transition: box-shadow 0.5s linear, background-color 0.5s linear;
-    &:hover {
-      box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.25);
-      background-color: #333333;
-    }
     border-radius: 20px;
     border: none;
     background-color: #000;
     padding: 10px 20px;
-    height: 35px;    
+    height: 35px;
+    width: 182px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 12px;
     color: #fff;
-    width: 182px;
+    transition: box-shadow 0.5s linear, background-color 0.5s linear;
+
+    &:hover {
+      box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.25);
+      background-color: #333333;
+    }
+
+    @media (max-width: 480px) {
+      width: 150px;
+      font-size: 10px;
+      padding: 8px 16px;
+    }
   }
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  @extend %padding;
 }
 
 .gameResult {
@@ -64,20 +117,52 @@
   font-weight: 400;
   font-size: 12px;
   text-align: center;
-  color: #039900;  
+  color: #039900;
+
+  @media (max-width: 480px) {
+    font-size: 10px;
+  }
 }
-.button-wrapper {
-  display: flex;
-  justify-content: center;
-  @extend %padding;
-}
+
 .scissors_paper_result_list {
-  position:absolute;
-  left: 855px;
-  top: 50px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-family);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 170%;
   color: var(--main--test--color);
+  margin-top: 20px;
+
+  &_title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    left: 855px;
+    top: 50px;
+    margin-top: 0;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    position: absolute;
+    left: 70vw;
+    top: 50px;
+    margin-top: 0;
+  }
+
+  @media (max-width: 1199px) {
+    position: static;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 10px;
+  }
 }
+
+
