@@ -14,12 +14,18 @@
       @extend %card-titles;
   
   }
+
+  &-check_button{
+    width: 35px;
+    height: 35px;
+  }
   &-input {
     font-family: 'Montserrat Alternates', sans-serif;
  margin-left: 35px ;
  padding: 10px 20px;
   @include placeholders.input_basic(135px);
   margin-bottom: 40px;
+  transition: 0.4s;
 
   &:hover{
     transform: scale(1.2);
