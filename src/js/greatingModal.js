@@ -11,7 +11,7 @@ const onEscepePress = event => {
   }
 };
 
-document.body.classList.add('show-modal');
+// document.body.classList.add('show-modal');
 document.addEventListener('keydown', onEscepePress);
 
 const onButtonModalClose = event => {
