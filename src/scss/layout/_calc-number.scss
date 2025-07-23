@@ -7,6 +7,9 @@
     align-items: center;
     justify-content: center;
     @extend %gap;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
     &_title {
       @extend %card-titles;
