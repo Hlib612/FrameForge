@@ -49,29 +49,35 @@
   height: 1.8px;
   width: 536px;
   background-color: var(--buttons-background);
+  animation-name: line_apear;
+  animation-duration: 900ms;
+  animation-iteration-count: 1;
+  animation-delay: 1000ms;
+  animation-timing-function: linear;
   @media screen and (max-width: 768px) {
-    width: 480px;
+    width: 415px;
+    animation-name: none;
   }
   @media screen and (max-width: 480px) {
     width: 300px;
   }
 }
 
-%search_svg{
-      transition: width 1s linear;
-    transition: height 1s linear;
-    transition: stroke 0.2s linear;
-    width: 16px;
-    height: 16px;
-    stroke: white;
-    fill: none;
+%search_svg {
+  transition: width 1s linear;
+  transition: height 1s linear;
+  transition: stroke 0.2s linear;
+  width: 16px;
+  height: 16px;
+  stroke: white;
+  fill: none;
 }
 
-%search_svg_hover{
-    transition: width 1s linear;
-    transition: height 1s linear;
-    transition: stroke 0.2s linear;
-    width: 20px;
-    height: 20px;
-    stroke: var(--buttons-background);
+%search_svg_hover {
+  transition: width 1s linear;
+  transition: height 1s linear;
+  transition: stroke 0.2s linear;
+  width: 20px;
+  height: 20px;
+  stroke: var(--buttons-background);
 }
