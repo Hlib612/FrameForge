@@ -67,7 +67,8 @@ const findBiggestNumber = (event) => {
     let num1 = parseFloat(inputs1.value);
     let num2 = parseFloat(inputs2.value);
     let num3 = parseFloat(inputs3.value);
-
+    // const maxNumber = Math.max(num1, num2, num3);
+    // result.textContent = `Найбільше число, яке ви ввели - ${maxNumber}`;
     console.log(num1);
     console.log(num2);
     console.log(num3);
@@ -83,4 +84,6 @@ const findBiggestNumber = (event) => {
     }
 };
 
+
 check_button.addEventListener('click', findBiggestNumber);
+
