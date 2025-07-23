@@ -16,8 +16,8 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script type="module" crossorigin src="/FrameForge/assets/index-028b8ae4.js"></script>
-    <link rel="stylesheet" href="/FrameForge/assets/index-df47e825.css">
+    <script type="module" crossorigin src="/FrameForge/assets/index-731a26b1.js"></script>
+    <link rel="stylesheet" href="/FrameForge/assets/index-5f76bd9e.css">
   </head>
   <body>
 
@@ -25,23 +25,27 @@
           <header class="header">
   <div class="container">
     <div class="headerDiv">
-      <img src="/FrameForge/assets/logo-35ae659c.svg" alt="" class="headerDiv_logo">
+      <a href="../index.html"><img src="/FrameForge/assets/logo-35ae659c.svg" alt="" class="headerDiv_logo"></a>
       <ul class="headerDiv_list">
         <li class="headerDiv_item">
           <div class="dropDown">
             <button class="dropDown_btn">Інтерактив <span><img src="/FrameForge/assets/arrow-bottom-b0162b36.svg" alt="" class="dropDown_btn_arrow"></span></button>
             <div class="dropDown_menu">
+              <div class="dropDown_menu_mobile">
+                <div class="dropDown_menu_mobile_item"><a href="#ourTeam">Наша команда</a></div>
+                <div class="dropDown_menu_mobile_item"><a href="#footer">Контакти</a></div>
+              </div>
               <div class="dropDown_item"><a href="#">Числовий</a></div>
               <div class="dropDown_item"><a href="#">Ігровий</a></div>
               <div class="dropDown_item dropDown_item_bottom"><a href="#">Ознайомчий</a></div>
             </div>
           </div>
         </li>
-        <li class="headerDiv_item">
-          <a href="#">Наша команда</a>
+        <li class="headerDiv_item mobileVer">
+          <a href="#ourTeam">Наша команда</a>
         </li>
-        <li class="headerDiv_item">
-          <a href="#">Контакти</a>
+        <li class="headerDiv_item mobileVer">
+          <a href="#footer">Контакти</a>
         </li>
       </ul>
       <div class="headerDiv_greetingsDiv">
@@ -279,7 +283,7 @@
   </div>
   
 
-      <div class="ourTeamDiv">
+      <div class="ourTeamDiv" id="ourTeam">
   <h2 class="ourTeamDiv_title">Наша команда</h2>
   <div class="ourTeamDiv_slider">
     <div class="ourTeamDiv_slider_item" id="first-card">
@@ -336,7 +340,7 @@
       </div>
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
   <div class="container footer-flex-container">
     <!--  -->
     <div class="footer-img">
