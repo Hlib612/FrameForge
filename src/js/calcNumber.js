@@ -5,8 +5,8 @@ const resultNumber = document.querySelector('#result-num');
 let operator = null;
 
 document.querySelector('#plus-btn').addEventListener('click', () => {operator = '+'});
-document.querySelector('#multiply-btn').addEventListener('click', () => {operator = '-'});
-document.querySelector('#minus-btn').addEventListener('click', () => {operator = '*'});
+document.querySelector('#multiply-btn').addEventListener('click', () => {operator = '*'});
+document.querySelector('#minus-btn').addEventListener('click', () => {operator = '-'});
 document.querySelector('#divide-btn').addEventListener('click', () => {operator = '/'});
 
 const equalsButton = document.querySelector('#equals-btn').addEventListener('click', () => {
