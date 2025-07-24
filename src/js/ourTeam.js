@@ -18,14 +18,14 @@ function updateButtons() {
 
 nextBtn.addEventListener('click', () => {
   if (currentIndex < items.length - 1) {
-    currentIndex++;
+    currentIndex + 1;
     updateSlider();
   }
 });
 
 prevBtn.addEventListener('click', () => {
   if (currentIndex > 0) {
-    currentIndex--;
+    currentIndex - 1;
     updateSlider();
   }
 });
