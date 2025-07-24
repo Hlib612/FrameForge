@@ -26,12 +26,12 @@ location.reload();
 const hardMode = event => {
  randomInt = getRandomInt(1, 100);
  title.textContent = 'Вгадай число, яке загадав комп’ютер 1 - 100 ☠';
- console.log(randomInt);
+//  console.log(randomInt);
 
 };
 
-console.log(Number(guestNumberInput.value));
-console.log(Number(guestNumberInput.value).toString());
+// console.log(Number(guestNumberInput.value));
+// console.log(Number(guestNumberInput.value).toString());
 
 const check = event => {
   event.preventDefault();
