@@ -1,4 +1,3 @@
-
 const input1 = document.querySelector('#num1');
 const input2 = document.querySelector('#num2');
 const input3 = document.querySelector('#num3');
@@ -21,6 +20,3 @@ function findMaxNumber() {
     input1.addEventListener('input', findMaxNumber);
     input2.addEventListener('input', findMaxNumber);
     input3.addEventListener('input', findMaxNumber);
-    
-
-
