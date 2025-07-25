@@ -16,8 +16,8 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script type="module" crossorigin src="/FrameForge/assets/index-17b6da43.js"></script>
-    <link rel="stylesheet" href="/FrameForge/assets/index-1c251271.css">
+    <script type="module" crossorigin src="/FrameForge/assets/index-6c136ae2.js"></script>
+    <link rel="stylesheet" href="/FrameForge/assets/index-f47a35a8.css">
   </head>
   <body>
 
@@ -25,11 +25,13 @@
           <header class="header">
   <div class="container">
     <div class="headerDiv">
-      <a href="../index.html"><img src="/FrameForge/assets/logo-35ae659c.svg" alt="" class="headerDiv_logo"></a>
+      <a href="../index.html"><img src="/FrameForge/assets/logo-35ae659c.svg" class="headerDiv_logo" data-aos="fade-right"
+     data-aos-easing="ease-in-sine"
+     data-aos-delay="200"></a>
       <ul class="headerDiv_list">
         <li class="headerDiv_item">
           <div class="dropDown">
-            <button class="dropDown_btn">Інтерактив <span><img src="/FrameForge/assets/arrow-bottom-b0162b36.svg" alt="" class="dropDown_btn_arrow"></span></button>
+            <button class="dropDown_btn" data-aos="fade-down" data-aos-delay="600">Інтерактив <span><img src="/FrameForge/assets/arrow-bottom-b0162b36.svg" alt="arrow button" class="dropDown_btn_arrow"  data-aos="fade-down" data-aos-delay="1000"></span></button>
             <div class="dropDown_menu">
               <div class="dropDown_menu_mobile">
                 <div class="dropDown_menu_mobile_item"><a href="#ourTeam">Наша команда</a></div>
@@ -42,18 +44,25 @@
           </div>
         </li>
         <li class="headerDiv_item mobileVer">
-          <a href="#ourTeam">Наша команда</a>
+          <a href="#ourTeam" data-aos="fade-down" data-aos-delay="1200">Наша команда</a>
         </li>
         <li class="headerDiv_item mobileVer">
-          <a href="#footer">Контакти</a>
+          <a href="#footer" data-aos="fade-down" data-aos-delay="1700">Контакти</a>
         </li>
       </ul>
       <div class="headerDiv_greetingsDiv">
-        <label class="headerDiv_label">
+        <label class="headerDiv_label" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="1900"
+     data-aos-offset="0">
           <input type="checkbox" class="headerDiv_checkbox" id="themeToggle">
           <span class="headerDiv_slider"></span>
         </label>
-        <p class="headerDiv_greetings">Вітаємо, <span class="headerDiv_greetingsSpan" >User</span>!</p>
+        <p class="headerDiv_greetings" data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500"
+     data-aos-delay="2400">Вітаємо, <span class="headerDiv_greetingsSpan">User</span>!</p>
       </div>
     </div>
   </div>
@@ -220,30 +229,47 @@
 </div>
 
       <div class="calc-time">
-    <h2 class="calc-time-h2">Калькулятор часу</h2>
-    <div class="calc-time-element">
-    <div class="input-group">
-        <input type="text" id="timeInput" placeholder="Введіть число" class="input-field">
-        <button type="button" class="search-button"> <svg class="search-button-svg" width="16" height="16"
-                viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="6.52174" cy="6.52174" r="5.52174" stroke-width="2" />
-                <path
-                    d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z"
-                    fill="white" />
-            </svg></button>
-          
-    </div>
-   
-        <div class="dashed-line">
-            <div class="calc-time-result">
-                3 дн. 15:45:01
-            </div>
-        </div>
+  <h2 class="calc-time-h2" data-aos="fade-down" data-aos-delay="300">
+    Калькулятор часу
+  </h2>
+  <div class="calc-time-element">
+    <div
+      class="input-group"
+      data-aos="fade-right"
+      data-aos-easing="ease-in-sine"
+      data-aos-delay="600"
+    >
+      <input
+        type="text"
+        id="timeInput"
+        placeholder="Введіть число"
+        class="input-field"
+      />
+      <button type="button" class="search-button">
+        <svg
+          class="search-button-svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="6.52174" cy="6.52174" r="5.52174" stroke-width="2" />
+          <path
+            d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z"
+            fill="white"
+          />
+        </svg>
+      </button>
     </div>
 
+    <div data-aos="fade-zoom-in" data-aos-delay="600">
+      <div class="calc-time-result">3 дн. 15:45:01</div>
+    </div>
+  </div>
 </div>
+
       <div class="google-dino">
-  <h2 class="google-dino-title">Google динозавр</h2>
+  <h2 class="google-dino-title" data-aos="fade-down" data-aos-delay="300">Google динозавр</h2>
   <div class="google-dino-container">
     <div class="google-dino-restart-button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHiSURBVHgB7Va9SgNBEJ6787xTDFicARuxUitLxd7atBaCncFO0Mp3sBEtfQCfIQhqZxWjnQ9gEMRIxEiiyfpNdg+ORMPt5VaC3Acfc7e/HzOzs0uUIUOGVGHFHWiTWXSFWJZVgnFoBBB6pgxRAnaMRgQVCGrDaokaRv0seAR+9rRzmPbBJ3BGCGE6RbqYAK/BK5Ie6KPjOJewefAx0m4kfJwjU2AF7KiNyuAquKa4gnDdqb5bkl40JopD4IMPIOfIi+d5C77vz/cO5DZwjmT4hElRFkJSh23BE8+wOeqpO+g/BWu2bdfYKvGJRMUZyInbBlhIA4kbKEEiOgj9kzDTA9aJXTxjQdWZpmJSpF48WdSb+jZ+xHU2CMd2yDB0RAn6I+gc06SJyrk0ob4/SJ7KVMBeeqeEQJlokoandcO3SHoe4/WXeK7ruheUMm7AL5Lu1wWf2rB4plarwoXCWlWMP5V2wBZ4QgZKiYW8OFbCamqzgcBVswlTV3NyZAjjELanNnkF+Xv7h3HcdoBboPtswZxD0ryMdWPsgQXwXM7G5SxEKdIvIGYd92Ne/tq7qLVn1P8QTB0uQlMAt+iXRx5OWhFPmw2Szx1tDHMafGy+rIRE17GCILivVqsNypAhQ4Z/im/s9X2etwLZTAAAAABJRU5ErkJggg==" alt="restart_button"></div>
     <div class="google-dino-score google-dino-font-pixel">0</div>
@@ -274,21 +300,21 @@
     <h2  data-aos="zoom-in" data-aos-delay="900" class="biggest-number-h2">Введіть 3 числа</h2>
     <div class="biggest-number-inputs">
       <input data-aos="zoom-in-right" data-aos-delay="500" class="biggest-number-input" name="number" id="num1" placeholder="Введіть число">
-      <input  data-aos="zoom-in-up" data-aos-delay="500" class="biggest-number-input" name="number" id="num2" placeholder="Введіть число">
+      <input data-aos="zoom-in-up" data-aos-delay="500" class="biggest-number-input" name="number" id="num2" placeholder="Введіть число">
       <input data-aos="zoom-in-left" data-aos-delay="500" class="biggest-number-input" name="number" id="num3" placeholder="Введіть число">
     </div>
-    <p  data-aos="zoom-in-up" data-aos-delay="700" class="biggest-number-p">Найбільше число, яке ви ввели - (число)</p>
+    <p data-aos="zoom-in-up" data-aos-delay="700" class="biggest-number-p">Найбільше число, яке ви ввели - (число)</p>
   </div>
   
 
       <div class="ourTeamDiv" id="ourTeam">
-  <h2 class="ourTeamDiv_title">Наша команда</h2>
+  <h2 class="ourTeamDiv_title" data-aos="fade-down" data-aos-delay="400">Наша команда</h2>
   <div class="ourTeamDiv_slider-wrapper">
     <div class="ourTeamDiv_slider" id="team-slider">
       <div class="ourTeamDiv_slider_item" id="first-card">
         <img src="/FrameForge/assets/oleksandr-51f65557.jpg" alt="studentPhoto1" class="ourTeamDiv_slider_img">
         <h3 class="ourTeamDiv_slider_title">Олександр</h3>
-        <p class="ourTeamDiv_slider_description">Привіт, мене звати Олександр! Я робив секціі (Камінь-Ножиці-Бумага, Обери вчених, Футер, ГуглДіно, Калькулятор часу і одну модалку).</p>
+        <p class="ourTeamDiv_slider_description" data-aos="zoom-in-up" data-aos-delay="500">Привіт, мене звати Олександр! Я робив секціі (Камінь-Ножиці-Бумага, Обери вчених, Футер, ГуглДіно, Калькулятор часу і одну модалку).</p>
       </div>
       <div class="ourTeamDiv_slider_item" id="second-card">
         <img src="/FrameForge/assets/hlib-351a91f0.jpg" alt="studentPhoto2" class="ourTeamDiv_slider_img">
@@ -303,7 +329,7 @@
       <div class="ourTeamDiv_slider_item" id="fourth-card">
         <img src="/FrameForge/assets/kira-327bb8eb.jpg" alt="studentPhoto4" class="ourTeamDiv_slider_img">
         <h3 class="ourTeamDiv_slider_title">Кіра</h3>
-        <p class="ourTeamDiv_slider_description">Привіт, мене звати Кіра! Я робила секції (Калькулятор часу, найільше число)</p>
+        <p class="ourTeamDiv_slider_description">Привіт, мене звати Кіра! Я робила секції (Калькулятор часу, найібльше число)</p>
       </div>
     </div>
   </div>
@@ -317,16 +343,23 @@
 </div>
 
       <div class="pick_scientist">
-  <h2 class="pick_scientist__title">Обери вченого/их</h2>
-  <ul class="pick_scientist__list" id="pick_scientist-list"></ul>
+  <h2 class="pick_scientist__title" data-aos="fade-down" data-aos-delay="400">Обери вченого/их</h2>
+  <ul class="pick_scientist__list" id="pick_scientist-list" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="600"
+     data-aos-offset="0"></ul>
   <div id="pick-scientist__wrapper" class="pick_scientist__wrapper">
-    <ul class="pick_scientist__actions pick_scientist__actions--group1">
+    <ul class="pick_scientist__actions pick_scientist__actions--group1" data-aos="fade-right"
+     data-aos-easing="ease-in-sine"
+     data-aos-delay="600">
       <li><button class="pick_scientist__button" data-action="born-19th-century">Які вчені народилися в 19 ст.</button></li>
       <li><button class="pick_scientist__button" data-action="sort-alphabetically">Відсортувати вчених за алфавітом</button></li>
       <li><button class="pick_scientist__button" data-action="sort-by-age">Відсортувати вчених за кількістю прожитих років</button></li>
       <li><button class="pick_scientist__button" data-action="find-latest-born">Знайти вченого, який народився найпізніше</button></li>
     </ul>
-    <ul class="pick_scientist__actions pick_scientist__actions--group2">
+    <ul class="pick_scientist__actions pick_scientist__actions--group2" data-aos="fade-left"
+     data-aos-duration="500"
+     data-aos-delay="600">
       <li><button class="pick_scientist__button" data-action="find-einstein-birthyear">Знайти рік народження Albert Einshtein</button></li>
       <li><button class="pick_scientist__button" data-action="find-surnames-c">Знайти вчених, прізвища яких починаються на літеру “С”</button></li>
       <li><button class="pick_scientist__button" data-action="remove-names-a">Видалити всіх вчених, ім’я яких починається на “А”</button></li>
@@ -344,10 +377,12 @@
     <footer class="footer" id="footer">
   <div class="container footer-flex-container">
     <!--  -->
-    <div class="footer-img">
+    <div class="footer-img" data-aos="fade-right"
+     data-aos-easing="ease-in-sine"
+     data-aos-delay="400">
       <a href="../index.html"><img src="/FrameForge/assets/logo-35ae659c.svg" alt="logotype"></a>
     </div>
-    <ul class="footer-list">
+    <ul class="footer-list" data-aos="zoom-in-down" data-aos-delay="800">
       <li class="footer-list-item"><a href="tel:+381234567890">Тел: +38 (123) 456 78 90</a></li>
       <li class="footer-list-item"><a href="mailto:codingmagic@gmail.com">codingmagic@gmail.com</a></li>
       <li class="footer-list-item"><a href="#">Facebook: CodingMagic</a></li>
@@ -362,8 +397,9 @@
           placeholder="Ваша ел. адреса..."
           class="footer-email-input"
           required
+          data-aos="zoom-in-down" data-aos-delay="1200"
         >
-        <button type="submit" class="footer-subscribe-button">
+        <button type="submit" class="footer-subscribe-button" data-aos="zoom-in-down" data-aos-delay="1600">
           Підписатись
         </button>
       </form>
