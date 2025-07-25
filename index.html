@@ -16,8 +16,8 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script type="module" crossorigin src="/FrameForge/assets/index-6c136ae2.js"></script>
-    <link rel="stylesheet" href="/FrameForge/assets/index-f47a35a8.css">
+    <script type="module" crossorigin src="/FrameForge/assets/index-fb6ecb7e.js"></script>
+    <link rel="stylesheet" href="/FrameForge/assets/index-a86754d4.css">
   </head>
   <body>
 
@@ -262,7 +262,7 @@
       </button>
     </div>
 
-    <div data-aos="fade-zoom-in" data-aos-delay="600">
+    <div class="dashed-line" data-aos="fade-zoom-in" data-aos-delay="600">
       <div class="calc-time-result">3 дн. 15:45:01</div>
     </div>
   </div>
@@ -399,7 +399,7 @@
           required
           data-aos="zoom-in-down" data-aos-delay="1200"
         >
-        <button type="submit" class="footer-subscribe-button" data-aos="zoom-in-down" data-aos-delay="1600">
+        <button type="submit" class="footer-subscribe-button" data-action="open-footer-modal" data-aos="zoom-in-down" data-aos-delay="1600">
           Підписатись
         </button>
       </form>
@@ -430,7 +430,14 @@
 </div>
 
 
-    
+    <div class="footer-modal-backdrop js-footer-modal-backdrop">
+  <div class="footer-modal"> 
+    <h2 class="footer-modal-title">Дякую за підписку!</h2>
+    <button type="button" class="button-footer-close" data-action="close-footer-modal">
+      <img src="../img/close-btn-footer.svg" alt="close-btn-footer">
+    </button>
+  </div>
+</div>
 
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
