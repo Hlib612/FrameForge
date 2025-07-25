@@ -7,6 +7,9 @@
     align-items: center;
     justify-content: center;
     @extend %gap;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
     &_title {
       @extend %card-titles;
@@ -15,13 +18,13 @@
     }
     &_label {
       border-radius: 20px;
-      padding: 10px 20px;
       width: 135px;
       height: 35px;
       box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
       background: #d7d7d7;
     }
     &_input {
+      padding: 10px 20px 10px 20px;
       background-color: transparent;
       font-family: var(--font-family);
       font-weight: 400;
@@ -61,13 +64,12 @@
     }
     &_resultLabel {
       border-radius: 20px;
-      padding: 10px 20px;
       width: 118px;
       height: 35px;
       background: #d7d7d7;
-      padding: 10px 20px;
     }
     &_resultInput {
+      padding: 10px 20px 10px 20px;
       font-family: var(--font-family);
       font-weight: 400;
       font-size: 12px;

@@ -51,9 +51,11 @@
     cursor: pointer;
     background-color: var(--buttons-background);
     border: none;
+    transition: width 0.1s linear;
   }
 
   &_submit_button:hover {
+    transition: width 0.1s linear;
     width: 39px;
     background-color: #7e7e7e;
   }

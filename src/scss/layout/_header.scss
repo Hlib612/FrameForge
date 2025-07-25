@@ -20,12 +20,24 @@
         align-items: center;
         gap: 50px;
         margin-left: 81px;
+        @media screen and (max-width: 1200px) {
+            margin-left: 60px;
+        }
+        @media screen and (max-width: 768px) {
+                margin-left: 50px;
+        }
+        
     }
     &_item {
         font-family: var(--font-family);
         font-weight: 400;
         font-size: 12px;
         color: var(--main--test--color);
+        transition: 0.5s;
+    }
+    &_item:hover {
+        color: #7e7e7e;
+        transition: 0.5s;
     }
     &_greetingsDiv {
         display: flex;
@@ -75,6 +87,12 @@
         margin-left: 51px;
         display: flex;
         align-items: center;
+        @media screen and (max-width: 1200px) {
+            margin-left: 15px;
+        }
+       @media screen and (max-width: 768px) {
+        margin-left: 15px;
+       }
     }
     
 }
@@ -89,11 +107,16 @@
         padding: 0;
         color: var(--main--test--color);
         cursor: pointer;
+        transition: 0.5s;
         &_arrow {
             width: 11px;
             height: 7px;
             margin-left: 8px;
         }
+    }
+    &_btn:hover {
+        color: #7e7e7e;
+        transition: 0.5s;
     }
     &_menu {
         display: none;
@@ -101,7 +124,32 @@
         top: 100%;
         left: 0%;
         z-index: 10;
+        &_mobile {
+           @media screen and (min-width: 768px) {
+            display: none;
+           } 
+           &_item {
+            text-align: center;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 12px;
+            color: var(--main--test--color);
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+            width: 160px;
+            height: 35px;
+            cursor: pointer;
+            background-color: var(--main--bg--color);
+            padding: 10px;
+            transition: 0.8s;
+           }
+           &_item:hover {
+            background-color: #f1f1f1;
+            transition: 0.5s;
+           }
+        }
     }
+    
     &_item {
         text-align: center;
         font-family: var(--font-family);
@@ -124,5 +172,10 @@
     &_item:hover {
         background-color: #f1f1f1;
         transition: 0.5s;
+    }
+}
+.mobileVer {
+    @media screen and (max-width: 768px) {
+        display: none;
     }
 }

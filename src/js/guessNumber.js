@@ -16,7 +16,6 @@ let guestNumberValue = 0;
 
 const updateValue = event => {
   guestNumberValue = guestNumberInput.value;
-  return console.log(Number(guestNumberInput.value));
 };
 
 const refreshPage = event => {
@@ -29,9 +28,6 @@ const hardMode = event => {
  console.log(randomInt);
 
 };
-
-console.log(Number(guestNumberInput.value));
-console.log(Number(guestNumberInput.value).toString());
 
 const check = event => {
   event.preventDefault();
