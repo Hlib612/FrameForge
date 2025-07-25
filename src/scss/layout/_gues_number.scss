@@ -59,6 +59,9 @@
     width: 39px;
     background-color: #7e7e7e;
   }
+  &_reaset_img{
+    border-radius: 20px 10px 20px 20px;
+  }
 
   &_svg {
     @extend %search_svg;

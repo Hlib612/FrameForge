@@ -1,89 +1,79 @@
-@use "../utils/variebles";
+@use '../utils/variebles';
 @use '../utils/placeholders';
 
 .calc-time {
-    position: relative;
-    text-align: center;
-    margin: 40px 0;
-    @extend %basic_margin;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-  
-  .calc-time-h2 {
-    @extend %basic_margin;
-    @extend %card-titles;
-  }
-  
-  .calc-time-input-wrapper {
-    
-    padding: 10px 45px 10px 10px;
-    @include placeholders.input_basic(150px);
-    
-  }
-  .input-group{
-    font-family: 'Montserrat Alternates', sans-serif;
-    box-shadow: 3px 3px #00000040;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    margin-right: 300px;
-    margin-bottom: 15px;
-    
-  }
-  .input-field {
-    @include placeholders.input_basic(135px);
-    border-radius: 0 ;
-    padding-left: 10px;
-  }
-  
-  .search-button {
-    display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 5px 10px;
-      width: 35px;
-      box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
-      background: #000;
-      color: #FFF;
-      border: none;
-      transition: 0.1s;
-      
-     
+  position: relative;
+  text-align: center;
+  margin: 40px 0;
+  @extend %basic_margin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    
-   
-  }
-  
+.calc-time-h2 {
+  @extend %basic_margin;
+  @extend %card-titles;
+}
 
-  
-  .calc-time::after {
-    @extend %line;
-    margin: 20px auto 0 auto;
-  }
-  
-.search-button-svg{
-  stroke: white;
-  fill:none;
+.calc-time-input-wrapper {
+  padding: 10px 45px 10px 10px;
+  @include placeholders.input_basic(150px);
+}
+.input-group {
+  font-family: 'Montserrat Alternates', sans-serif;
+  box-shadow: 3px 3px #00000040;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: 300px;
+  margin-bottom: 15px;
+}
+.input-field {
+  @include placeholders.input_basic(135px);
+  border-radius: 0;
+  padding-left: 10px;
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  width: 35px;
+  transition: width 0.1s linear;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background: #000;
+  color: #fff;
+  border: none;
+  transition: 0.1s;
+}
+.search-button:hover {
+    transition: width 0.1s linear;
+    width: 39px;
+    background-color: #7e7e7e;
+}
+
+.calc-time::after {
+  @extend %line;
+  margin: 20px auto 0 auto;
+}
+
+.search-button-svg {
+  @extend %search_svg;
 }
 
 .search-button:hover .search-button-svg {
-  stroke: rgb(255, 255, 255);
-  fill: none;
-  transition: 0.1s;
-  transform: scale(1.5);
-  }
-
-.calc-time-result{
-  display: flex;
-  color: var(--main--test--color);
- 
+  @extend %search_svg_hover;
 }
 
-.calc-time-element{
+.calc-time-result {
+  display: flex;
+  color: var(--main--test--color);
+}
+
+.calc-time-element {
   display: flex;
   align-items: center;
 }
