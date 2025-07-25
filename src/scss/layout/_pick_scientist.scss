@@ -2,22 +2,57 @@
 @use "../utils/placeholders";
 
 .pick_scientist {
-    @extend %padding;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  @extend %padding;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &__title {
     @extend %padding;
     @extend %card-titles;
   }
+
+  &__wrapper {
+    @extend %padding;
+    display: flex;
+    justify-content: center;
+    width: 926px;
+    gap: 36px;
+
+    @media (min-width: 1024px) {
+      width: 758px;
+      gap: 24px;
+    }
+    @media (max-width: 768px) {
+      width: 476px;
+      gap: 10px;
+    }
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   &__list {
     @extend %padding;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 59px;
-    column-gap: 36px;   
+    column-gap: 36px;
     width: 577px;
+
+    @media (max-width: 1024px) {
+      row-gap: 48px;
+      column-gap: 24px;
+      width: 396px;
+    }
+    @media (max-width: 480px) {
+      row-gap: 36px;
+      column-gap: 12px;
+      width: 320px;
+    }
+
     &-item {
       perspective: 1000px;
       border-radius: 20px;
@@ -27,108 +62,123 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 20px;
       overflow: hidden;
       position: relative;
-      perspective: 1000px;
-      transition: background-color 0.3s ease, transform 0.6s ease;
-  
-  &:hover {
-    background-color: transparent;
-  }
+      transition: background-color 0.5s ease, transform 0.6s ease;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      @media (max-width: 480px) {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
+
   &__name {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 8px;
     line-height: 170%;
     text-align: center;
-    color: #000;   
+    color: #000;
     width: 65px;
+
     &-last-element {
-      font-family: var(--font-family);
-      font-weight: 400;
-      font-size: 8px;
-      line-height: 170%;
-      text-align: center;
-      color: #000;  
+      @extend .pick_scientist__name;
       width: 92px;
     }
   }
 
   &__actions {
-
-
-    &--group1 { 
-      display: flex; 
+    &--group1,
+    &--group2 {
+      display: flex;
       flex-direction: column;
+      gap: 20px;
+      width: 50%;
+
+      @media (max-width: 1024px) {
+        gap: 16px;
+      }
+      @media (max-width: 768px) {
+        gap: 14px;
+      }
+      @media (max-width: 480px) {
+        align-items: center;
+      }
+    }
+
+    &--group1 {
+      @media (max-width: 1920px) {
       align-items: end;
-      gap: 20px;
-      width: 50%;
+      }
+      @media (max-width: 480px) {
+        align-items: center;
+      }
     }
-    &--group2 { 
-      display: flex; 
-      flex-direction: column;
+
+    &--group2 {
+      @media (max-width: 1920px) {
       align-items: start;
-      gap: 20px;
-      width: 50%;
+      }
+      @media (max-width: 480px) {
+        align-items: center;
+      }
     }
-    &--fullwidth { 
+
+    &--fullwidth {
       max-width: 489px;
     }
   }
 
   &__button {
-    transition: box-shadow 0.5s linear, background-color 0.5s linear;
-    &:hover {
-      box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.25);
-      background-color: #333333;
-    }
-    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
     background: #000;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 12px;
     color: #fff;
     text-align: left;
+    transition: box-shadow 0.5s linear, background-color 0.5s linear;
+
+    &:hover {
+      box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
+      background-color: #333;
+    }
+    @media (max-width: 1920px) {
+      font-size: 12px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 11px;
+    }
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
-#pick-scientist__wrapper {
-  @extend %padding;
-  display: flex;
-  justify-content: center;
-  width: 926px;
-  gap: 36px;
-}
-
-#name-5 {
-  width: 84px;
-}
-#name-6 {
-  width: 84px;
-}
-#name-8 {
-  width: 78px; 
-}
-#name-12 {
-  width: 92px;
-}
-
-// card effects 
+#name-5, #name-6 { width: 84px; }
+#name-8 { width: 78px; }
+#name-12 { width: 92px; }
 
 .card-inner {
   width: 100%;
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.6s;
+  transition: transform 2s;
   border-radius: 20px;
 }
 
@@ -146,16 +196,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity 1s;
 }
 
 .card-front {
-  background-color: #d9d9d9;
+  background: #d9d9d9;
+  opacity: 1;
 }
 
 .card-back {
-  background-color: #fff;
+  background: #fff;
   transform: rotateY(180deg);
+  opacity: 0;
 }
+
+.flippable:hover .card-front { opacity: 0; }
+.flippable:hover .card-back { opacity: 1; }
 
 .card-back img {
   width: 100%;
@@ -164,3 +220,69 @@
   border-radius: 20px;
 }
 
+.pick_scientist__actions--group1 .pick_scientist__button,
+.pick_scientist__actions--group2 .pick_scientist__button,
+.pick_scientist__actions--fullwidth .pick_scientist__button {
+  @media (min-width: 1024px) and (max-width: 1920px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 11px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .pick_scientist__actions--group1 li:nth-child(1) .pick_scientist__button { width: 230px; height: 36px; }
+  .pick_scientist__actions--group1 li:nth-child(2) .pick_scientist__button { width: 310px; height: 36px; }
+  .pick_scientist__actions--group1 li:nth-child(3) .pick_scientist__button { width: 384px; height: 36px; }
+  .pick_scientist__actions--group1 li:nth-child(4) .pick_scientist__button { width: 334px; height: 36px; }
+
+  .pick_scientist__actions--group2 li:nth-child(1) .pick_scientist__button { width: 312px; height: 36px; }
+  .pick_scientist__actions--group2 li:nth-child(2) .pick_scientist__button { width: 441px; }
+  .pick_scientist__actions--group2 li:nth-child(3) .pick_scientist__button { width: 380px; height: 36px; }
+  .pick_scientist__actions--group2 li:nth-child(4) .pick_scientist__button { width: 342px; }
+
+  .pick_scientist__actions--fullwidth .pick_scientist__button { width: 489px; }
+}
+@media (max-width: 1024px) {
+  .pick_scientist__actions--group1 li:nth-child(1) .pick_scientist__button { width: 218px; height: 33px; }
+  .pick_scientist__actions--group1 li:nth-child(2) .pick_scientist__button { width: 310px; height: 33px; }
+  .pick_scientist__actions--group1 li:nth-child(3) .pick_scientist__button { width: 354px; height: 33px; }
+  .pick_scientist__actions--group1 li:nth-child(4) .pick_scientist__button { width: 332px; height: 33px; }
+
+  .pick_scientist__actions--group2 li:nth-child(1) .pick_scientist__button { width: 312px; height: 33px; }
+  .pick_scientist__actions--group2 li:nth-child(2) .pick_scientist__button { width: 336px; }
+  .pick_scientist__actions--group2 li:nth-child(3) .pick_scientist__button { width: 346px; height: 33px; }
+  .pick_scientist__actions--group2 li:nth-child(4) .pick_scientist__button { width: 342px; }
+
+  .pick_scientist__actions--fullwidth .pick_scientist__button { width: 460px; }
+}
+
+@media (max-width: 768px) {
+  .pick_scientist__actions--group1 li:nth-child(1) .pick_scientist__button { width: 200px; height: 33px; }
+  .pick_scientist__actions--group1 li:nth-child(2) .pick_scientist__button { width: 206px; height: 38px; }
+  .pick_scientist__actions--group1 li:nth-child(3) .pick_scientist__button { width: 234px; height: 38px; }
+  .pick_scientist__actions--group1 li:nth-child(4) .pick_scientist__button { width: 220px; height: 38px; }
+
+  .pick_scientist__actions--group2 li:nth-child(1) .pick_scientist__button { width: 207px; height: 38px; }
+  .pick_scientist__actions--group2 li:nth-child(2) .pick_scientist__button { width: 208px; height: 48px; }
+  .pick_scientist__actions--group2 li:nth-child(3) .pick_scientist__button { width: 216px; height: 38px; }
+  .pick_scientist__actions--group2 li:nth-child(4) .pick_scientist__button { width: 228px; height: 48px; }
+
+  .pick_scientist__actions--fullwidth .pick_scientist__button { width: 440px; }
+}
+
+@media (max-width: 480px) {
+  .pick_scientist__actions--group1 li .pick_scientist__button,
+  .pick_scientist__actions--group2 li .pick_scientist__button {
+    width: 100%;
+  }
+
+  .pick_scientist__actions--fullwidth .pick_scientist__button { width: 100%; }
+}

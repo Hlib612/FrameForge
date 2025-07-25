@@ -1,83 +1,21 @@
 <div class="pick_scientist">
   <h2 class="pick_scientist__title">Обери вченого/их</h2>
-  <ul class="pick_scientist__list" id="pick_scientist-list">
-  </ul>
-  <div id="pick-scientist__wrapper">
+  <ul class="pick_scientist__list" id="pick_scientist-list"></ul>
+  <div id="pick-scientist__wrapper" class="pick_scientist__wrapper">
     <ul class="pick_scientist__actions pick_scientist__actions--group1">
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--born19"
-          data-action="born-19th-century"
-        >
-          Які вчені народилися в 19 ст.
-        </button>
-      </li>
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--einstein"
-          data-action="sort-alphabetically"
-        >
-          Відсортувати вчених за алфавітом
-        </button>
-      </li>
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--sort-alpha"
-          data-action="sort-by-age"
-        >
-          Відсортувати вчених за кількістю прожитих років
-        </button>
-      </li>
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--surname-c"
-          data-action="find-latest-born"
-        >
-          Знайти вченого, який народився найпізніше
-        </button>
-      </li>
+      <li><button class="pick_scientist__button" data-action="born-19th-century">Які вчені народилися в 19 ст.</button></li>
+      <li><button class="pick_scientist__button" data-action="sort-alphabetically">Відсортувати вчених за алфавітом</button></li>
+      <li><button class="pick_scientist__button" data-action="sort-by-age">Відсортувати вчених за кількістю прожитих років</button></li>
+      <li><button class="pick_scientist__button" data-action="find-latest-born">Знайти вченого, який народився найпізніше</button></li>
     </ul>
     <ul class="pick_scientist__actions pick_scientist__actions--group2">
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--sort-age"
-          data-action="find-einstein-birthyear"
-        >
-          Знайти рік народження Albert Einshtein
-        </button>
-      </li>
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--remove-a"
-          data-action="find-surnames-c"
-        >
-          Знайти вчених, прізвища яких починаються на літеру “С”
-        </button>
-      </li>
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--latest-born"
-          data-action="remove-names-a"
-        >
-          Видалити всіх вчених, ім’я яких починається на “А”
-        </button>
-      </li>
-      <li class="pick_scientist__actions-item">
-        <button
-          class="pick_scientist__button pick_scientist__button--longest-shortest"
-          data-action="find-longest-shortest-lived"
-        >
-          Знайти вченого, який прожив найдовше і вченого, який прожив найменше
-        </button>
-      </li>
+      <li><button class="pick_scientist__button" data-action="find-einstein-birthyear">Знайти рік народження Albert Einshtein</button></li>
+      <li><button class="pick_scientist__button" data-action="find-surnames-c">Знайти вчених, прізвища яких починаються на літеру “С”</button></li>
+      <li><button class="pick_scientist__button" data-action="remove-names-a">Видалити всіх вчених, ім’я яких починається на “А”</button></li>
+      <li><button class="pick_scientist__button" data-action="find-longest-shortest-lived">Знайти вченого, який прожив найдовше і найменше</button></li>
     </ul>
   </div>
   <div class="pick_scientist__actions pick_scientist__actions--fullwidth">
-    <button
-      class="pick_scientist__button pick_scientist__button--initials-match"
-      data-action="match-initials"
-    >
-      1. Знайти вчених, в яких співпадають перші літери імені і прізвища
-    </button>
+    <button class="pick_scientist__button" data-action="match-initials">1. Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
   </div>
 </div>

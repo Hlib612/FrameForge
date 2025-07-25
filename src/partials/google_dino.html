@@ -1,6 +1,7 @@
 <div class="google-dino">
   <h2 class="google-dino-title">Google динозавр</h2>
   <div class="google-dino-container">
+    <div class="google-dino-restart-button"><img src="./img/dino-images/restart_button.png" alt="restart_button"></div>
     <div class="google-dino-score google-dino-font-pixel">0</div>
     <p class="google-dino-toStartText google-dino-font-pixel" id="toStartText">Press "Space" To Start</p>
     <img src="./img/dino-images/dino-stationary.png" alt="dino" id="dino" class="google-dino-imageDino" />
@@ -8,10 +9,11 @@
       <img src="./img/dino-images/ground.png" alt="dino" class="google-dino-ground-img" />
       <img src="./img/dino-images/ground.png" alt="dino" class="google-dino-ground-img" />
     </div>
-    <img src="./img/dino-images/cactus.png" alt="cactus" class="google-dino-cactus" id="cactus"/>
+    <div id="obstacles" class="google-dino-obstacles"></div>
     <div class="google-dino-loseMenu" id="loseMenu">
         <p class="loseText google-dino-font-pixel google-dino-loseText-margin">You Losed</p>
-        <p class="loseText google-dino-font-pixel">Press "R" To Retart</p>
+        <p class="loseText google-dino-font-pixel google-dino-loseText-margin">Press "R" To Restart</p>
+        <p class="loseText google-dino-font-pixel showRestartBtnText">Or Restart Button</p>
     </div>
   </div>
 </div>

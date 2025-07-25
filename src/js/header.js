@@ -10,21 +10,14 @@ document.querySelector('#themeToggle').addEventListener('click', () => {
   };
 })
 
-// let darkMode = false;
-// document.getElementById('themeToggle').addEventListener('click', () => {
-//   darkMode = !darkMode;
-//   if (darkMode) {
-//     document.querySelector('.main-container-bg-color').style.backgroundColor =
-//       '#1e252b';
-//     document.body.style.color = '#FFF';
-//     document.querySelector('.header').style.backgroundColor = '#1e252b';
-//     document.querySelector('.footer').style.backgroundColor = '#1e252b';
-//   } else {
-//     document.querySelector('.main-container-bg-color').style.backgroundColor =
-//       '#FFF';
-//     document.body.style.color = '#000000';
-//     document.querySelector('.header').style.backgroundColor = '#FFF';
-//     document.querySelector('.footer').style.backgroundColor = '#FFF';
-//   }
-// })
+const dropDownToogle = document.querySelector('.dropDown_btn');
+const dropDownMenu = document.querySelector('.dropDown_menu');
+dropDownToogle.addEventListener('click', () => {
+  dropDownMenu.style.display = dropDownMenu.style.display === "block" ? "none" : "block";
+});
 
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.dropDown')) {
+    dropDownMenu.style.display = "none";
+  }
+});
