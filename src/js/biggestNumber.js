@@ -21,5 +21,6 @@ function findMaxNumber() {
     input1.addEventListener('input', findMaxNumber);
     input2.addEventListener('input', findMaxNumber);
     input3.addEventListener('input', findMaxNumber);
+    
 
 
