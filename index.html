@@ -16,8 +16,8 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script type="module" crossorigin src="/FrameForge/assets/index-136984a7.js"></script>
-    <link rel="stylesheet" href="/FrameForge/assets/index-9511f856.css">
+    <script type="module" crossorigin src="/FrameForge/assets/index-17b6da43.js"></script>
+    <link rel="stylesheet" href="/FrameForge/assets/index-1c251271.css">
   </head>
   <body>
 
@@ -135,11 +135,7 @@
         </button>
       </div>
     </form>
-    <button class="gues_mumber_reaset_button" 
-     data-aos="fade-zoom-in"
-     data-aos-easing="ease-in-back"
-     data-aos-delay="400"
-     data-aos-offset="0"><img src="/FrameForge/assets/refresh-3b0258d1.png" alt="refresh arrow" class="gues_mumber_reaset_img"></button>
+    <button class="gues_mumber_reaset_button"><img src="/FrameForge/assets/refresh-3b0258d1.png" alt="refresh arrow" class="gues_mumber_reaset_img"></button>
     <button class="gues_mumber_hardmode_button"
      data-aos="fade-zoom-in"
      data-aos-easing="ease-in-back"
@@ -156,10 +152,10 @@
 
       <div class="scissors_paper">
   <!--  -->
-  <h2 class="scissors_paper-title">Камінь - ножиці - папір</h2>
+  <h2 class="scissors_paper-title" data-aos="fade-down" data-aos-delay="1000">Камінь - ножиці - папір</h2>
   <!--  -->
   <div class="scissors_paper_lists_wrapper">
-    <ul class="scissors_paper-list">
+    <ul class="scissors_paper-list"  data-aos="fade-down" data-aos-delay="300">
       <li class="scissors_paper-list-item rock" data-action="rock">
         <img src="/FrameForge/assets/rock-687492a4.svg" alt="rock">
       </li>
@@ -171,7 +167,7 @@
       </li>
     </ul>
     <!--  -->
-    <div class="scissors_paper_result_list">
+    <div class="scissors_paper_result_list" data-aos="zoom-in-up" data-aos-delay="300">
       <ul>
         <p class="scissors_paper_result_list_title">Рахунок:</p>
         <li class="scissors_paper_result_list_item" id="computerWinsCounter">
@@ -184,7 +180,7 @@
     </div>
   </div>
   <!--  -->
-  <div><p class="gameResult" id="gameResult">Ви виграли раунд!</p></div>
+  <div data-aos="zoom-in-up" data-aos-delay="450"><p class="gameResult" id="gameResult">Ви виграли раунд!</p></div>
   <!--  -->
   <div class="button-wrapper">
     <button class="scissors_paper-button" id="computerChoiceBtn">
@@ -194,10 +190,10 @@
 </div>
 
       <div class="calcNumberDiv">
-  <h2 class="calcNumberDiv_title">Калькулятор</h2>
+  <h2 class="calcNumberDiv_title"  data-aos="fade-down" data-aos-delay="300">Калькулятор</h2>
   <div class="calcNumberDiv_align">
-  <label class="calcNumberDiv_label">
-    <input type="text" placeholder="Введіть число" class="calcNumberDiv_input" id="first-num">
+  <label class="calcNumberDiv_label"  data-aos="zoom-in-right" data-aos-delay="500">
+    <input type="text" placeholder="Введіть число" class="calcNumberDiv_input" id="first-num" data-aos="zoom-in"  data-aos-delay="800">
   </label>
   <ul class="calcNumberDiv_list">
     <li class="calcNumberDiv_item">
@@ -213,12 +209,12 @@
       <button class="calcNumberDiv_button" id="divide-btn">/</button>
     </li>
   </ul>
-  <label class="calcNumberDiv_label">
-    <input type="text" placeholder="Введіть число" class="calcNumberDiv_input" id="second-num">
+  <label class="calcNumberDiv_label" data-aos="zoom-in-right" data-aos-delay="900">
+    <input type="text" placeholder="Введіть число" class="calcNumberDiv_input" id="second-num" data-aos="zoom-in"  data-aos-delay="1200">
   </label>
   <button class="calcNumberDiv_button" id="equals-btn">=</button>
-  <label class="calcNumberDiv_resultLabel">
-    <input type="text" placeholder="Результат" class="calcNumberDiv_resultInput" id="result-num">
+  <label class="calcNumberDiv_resultLabel" data-aos="zoom-in-right" data-aos-delay="1300">
+    <input type="text" placeholder="Результат" class="calcNumberDiv_resultInput" id="result-num" data-aos="zoom-in"  data-aos-delay="1600">
   </label>
 </div>
 </div>
