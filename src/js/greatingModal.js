@@ -11,7 +11,7 @@ const onEscepePress = event => {
   }
 };
 
-// document.body.classList.add('show-modal');
+document.body.classList.add('show-modal');
 document.addEventListener('keydown', onEscepePress);
 
 const onButtonModalClose = event => {
@@ -29,13 +29,10 @@ let UserNameInputContent = 0;
 
 const refreshInputTextContent = event => {
  UserNameInputContent = UserNameInput.value;
- console.log(UserNameInputContent);
 };
- console.log(UserNameInputContent);
 closeModalButton.addEventListener('click', onButtonModalClose);
 
 backDrop.addEventListener('click', onBackDropClick);
-console.log(UserNameInput.textContent)
 const changeUserName = event => {
     event.preventDefault();
     if(UserNameInputContent === 0){

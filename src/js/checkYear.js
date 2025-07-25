@@ -6,8 +6,6 @@ let guestYear = 0;
 
 const refreshGuestYear = event => {
   guestYear = Number(inputForYear.value);
-  console.log(guestYear);
-  console.log(guestYear.toString().length);
 };
 
 inputForYear.addEventListener('change', refreshGuestYear);
