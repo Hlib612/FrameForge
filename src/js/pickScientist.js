@@ -1,6 +1,36 @@
+import blodgettOptimized from '../img/scientist-optimization/blodgett-optimized.jpg';
+import copernicusOptimized from '../img/scientist-optimization/copernicus-optimized.jpg';
+import curieOptimized from '../img/scientist-optimization/curie-optimized.jpg';
+import einsteinOptimized from '../img/scientist-optimization/einstein-optimized.jpg';
+import galileiOptimized from '../img/scientist-optimization/galilei-optimized.jpg';
+import goodeOptimized from '../img/scientist-optimization/goode-optimized.jpg';
+import hammarströmOptimized from '../img/scientist-optimization/hammarström-optimized.jpg';
+import keplerOptimized from '../img/scientist-optimization/kepler-optimized.jpg';
+import lovelaceOptimized from '../img/scientist-optimization/lovelace-optimized.jpg';
+import meitnerOptimized from '../img/scientist-optimization/meitner-optimized.jpg';
+import newtonOptimized from '../img/scientist-optimization/newton-optimized.jpg';
+import planckOptimized from '../img/scientist-optimization/planck-optimized.jpg';
+
+
 const scientistGameList = document.querySelectorAll(".pick_scientist__list li > p")
 const buttonList = document.querySelectorAll(".pick_scientist button")
 const pickScientistList = document.querySelector('#pick_scientist-list')
+
+const imageMap = {
+  einstein: einsteinOptimized,
+  newton: newtonOptimized,
+  galilei: galileiOptimized,
+  curie: curieOptimized,
+  kepler: keplerOptimized,
+  copernicus: copernicusOptimized,
+  planck: planckOptimized,
+  blodgett: blodgettOptimized,
+  lovelace: lovelaceOptimized,
+  goode: goodeOptimized,
+  meitner: meitnerOptimized,
+  hammarström: hammarströmOptimized,
+};
+
 
 const scientists = [
 {
@@ -103,8 +133,8 @@ function addScientists(arr) {
     const li = document.createElement("li");
     li.className = "pick_scientist__list-item flippable"; 
 
-    const imageName = scientist.surname.toLowerCase();
-    const imagePath = `./img/scientist-optimization/${imageName}-optimized.jpg`;
+    const imageKey = scientist.surname.toLowerCase();
+    const imagePath = imageMap[imageKey];
 
     li.innerHTML = `
       <div class="card-inner">
@@ -122,6 +152,7 @@ function addScientists(arr) {
     pickScientistList.appendChild(li);
   });
 }
+
 
 addScientists(scientists);
 
