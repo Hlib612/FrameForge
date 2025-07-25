@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/FrameForge/assets/game-favicon-3f78f29f.svg">
@@ -16,8 +16,8 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script type="module" crossorigin src="/FrameForge/assets/index-fb6ecb7e.js"></script>
-    <link rel="stylesheet" href="/FrameForge/assets/index-a86754d4.css">
+    <script type="module" crossorigin src="/FrameForge/assets/index-2603efb3.js"></script>
+    <link rel="stylesheet" href="/FrameForge/assets/index-3a5b43ff.css">
   </head>
   <body>
 
@@ -25,7 +25,7 @@
           <header class="header">
   <div class="container">
     <div class="headerDiv">
-      <a href="../index.html"><img src="/FrameForge/assets/logo-35ae659c.svg" class="headerDiv_logo" data-aos="fade-right"
+      <a href="../index.html"><img src="/FrameForge/assets/logo-35ae659c.svg" alt="our logo: magic wand with two arrows" class="headerDiv_logo" data-aos="fade-right"
      data-aos-easing="ease-in-sine"
      data-aos-delay="200"></a>
       <ul class="headerDiv_list">
@@ -177,8 +177,8 @@
     </ul>
     <!--  -->
     <div class="scissors_paper_result_list" data-aos="zoom-in-up" data-aos-delay="300">
+      <p class="scissors_paper_result_list_title">Рахунок:</p>
       <ul>
-        <p class="scissors_paper_result_list_title">Рахунок:</p>
         <li class="scissors_paper_result_list_item" id="computerWinsCounter">
           Комп’ютер - 0
         </li>
@@ -244,7 +244,7 @@
         id="timeInput"
         placeholder="Введіть число"
         class="input-field"
-      />
+      >
       <button type="button" class="search-button">
         <svg
           class="search-button-svg"
@@ -274,10 +274,10 @@
     <div class="google-dino-restart-button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHiSURBVHgB7Va9SgNBEJ6787xTDFicARuxUitLxd7atBaCncFO0Mp3sBEtfQCfIQhqZxWjnQ9gEMRIxEiiyfpNdg+ORMPt5VaC3Acfc7e/HzOzs0uUIUOGVGHFHWiTWXSFWJZVgnFoBBB6pgxRAnaMRgQVCGrDaokaRv0seAR+9rRzmPbBJ3BGCGE6RbqYAK/BK5Ie6KPjOJewefAx0m4kfJwjU2AF7KiNyuAquKa4gnDdqb5bkl40JopD4IMPIOfIi+d5C77vz/cO5DZwjmT4hElRFkJSh23BE8+wOeqpO+g/BWu2bdfYKvGJRMUZyInbBlhIA4kbKEEiOgj9kzDTA9aJXTxjQdWZpmJSpF48WdSb+jZ+xHU2CMd2yDB0RAn6I+gc06SJyrk0ob4/SJ7KVMBeeqeEQJlokoandcO3SHoe4/WXeK7ruheUMm7AL5Lu1wWf2rB4plarwoXCWlWMP5V2wBZ4QgZKiYW8OFbCamqzgcBVswlTV3NyZAjjELanNnkF+Xv7h3HcdoBboPtswZxD0ryMdWPsgQXwXM7G5SxEKdIvIGYd92Ne/tq7qLVn1P8QTB0uQlMAt+iXRx5OWhFPmw2Szx1tDHMafGy+rIRE17GCILivVqsNypAhQ4Z/im/s9X2etwLZTAAAAABJRU5ErkJggg==" alt="restart_button"></div>
     <div class="google-dino-score google-dino-font-pixel">0</div>
     <p class="google-dino-toStartText google-dino-font-pixel" id="toStartText">Press "Space" To Start</p>
-    <img src="/FrameForge/assets/dino-stationary-997a5dc6.png" alt="dino" id="dino" class="google-dino-imageDino" />
+    <img src="/FrameForge/assets/dino-stationary-997a5dc6.png" alt="dino" id="dino" class="google-dino-imageDino" >
     <div class="google-dino-ground" id="ground">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACV8AAAAYCAYAAADnXB+kAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpVIqDu0g4pChOlkQFXHUKhShQqgVWnUweekfNGlIUlwcBdeCgz+LVQcXZ10dXAVB8AfEydFJ0UVKvC8ptIjxhkc+zrvn8N59gNCsMs3qGQc03TYzqaSYy6+KoVeEEUCUvkGZWcacJKXhW1/31Et1l+BZ/n1/Vr9asBgQEIlnmWHaxBvE05u2wXmfOMbKskp8Tjxm0gGJH7muePzGueSywDNjZjYzTxwjFktdrHQxK5sa8RRxXNV0yhdyHquctzhr1Tprn5PfMFLQV5a5TmsYKSxiCRJEKKijgipsJOivk2IhQ/tJH/+Q65fIpZCrAkaOBdSgQXb94G/we7ZWcXLCS4okgd4Xx/kYAUK7QKvhON/HjtM6AYLPwJXe8deawMwn6Y2OFj8CBraBi+uOpuwBlzvA4JMhm7IrBWkJxSLwfkbPlAeit0B4zZtbex+nD0CWZpW+AQ4OgdESZa/73Luve27/9rTn9wMgjHKG6ip4oAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+QKARMeL9L9k18AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAACkUlEQVR42u3cS26EMAwA0KZXDMecOzIrNkhUxZD/e/uqA9iOg4jTvu8/AAAAAAAwqm3bbr/o/nw+yZ0DANAH+v3AU79uAQAAAAAAAAAAwH3J5CsAAAAAAEZ0nhTwnykAkb8BAEAf6PcDV0y+AgAAAAAAAAAACDD5CgAAAACAIZxP+x8ip/5NDgAA0AfW6gP1sTA3k68AAAAAAAAAAAACTL4CAAAAAKBrJU/3vzmFAAAAfaA+FtZj8hUAAAAAAAAAAEBAyjkbfQUAAAAAQPdqnOK/miAw47X2ds0AALP2gSv1sbAik68AAAAAAAAAAAAC0r77+BEAAAAAAFq7mlZQYlJCzf8FAAAwM5OvAAAAAAAAAAAAAky+AgAAAACAzlxNpirBtCsAAIA4k68AAAAAAAAAAAACTL4a1NWpJyeUWDn+5QHqKmA9AQDrHfZZoP6irgLWEwCw3tVk8hUAAAAAAAAAAEDA7clXvrCmhSPuWsfXOf7FO+Jv3XrgulFX6D0/nYieM089R8+V8nW79vooHureV/eXFfpCfT7iTz1w3agrjJKf9kNz7788R8+VcnXb+6v+mHwFAAAAAAAAAAAQcHvyFQCszAk+xAf0mXcH+Yf6/zyP5BMAgP4U8QGU23fLP9T/53kkn+iNyVcAAAAAAAAAAAABJl+9ZJWTAr1/mX31xWuvv1dcULKO+AKcmvHZug6IdwB9I8gvEwwQJ6OsN95fiQt1xH6eNvHp/RUA+kaYaz/RE5OvAAAAAAAAAAAAAlLOuepJK1+K/n0/St9/1ogncQPASH2PdYuZ+m/9GPJLfbcfLfPca78/Ec9t7z/qBQD01vdYt5ip/9aPIb/Ud/vR95+7yVcAAAAAAAAAAAABX/6Z8AvqXAOiAAAAAElFTkSuQmCC" alt="dino" class="google-dino-ground-img" />
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACV8AAAAYCAYAAADnXB+kAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpVIqDu0g4pChOlkQFXHUKhShQqgVWnUweekfNGlIUlwcBdeCgz+LVQcXZ10dXAVB8AfEydFJ0UVKvC8ptIjxhkc+zrvn8N59gNCsMs3qGQc03TYzqaSYy6+KoVeEEUCUvkGZWcacJKXhW1/31Et1l+BZ/n1/Vr9asBgQEIlnmWHaxBvE05u2wXmfOMbKskp8Tjxm0gGJH7muePzGueSywDNjZjYzTxwjFktdrHQxK5sa8RRxXNV0yhdyHquctzhr1Tprn5PfMFLQV5a5TmsYKSxiCRJEKKijgipsJOivk2IhQ/tJH/+Q65fIpZCrAkaOBdSgQXb94G/we7ZWcXLCS4okgd4Xx/kYAUK7QKvhON/HjtM6AYLPwJXe8deawMwn6Y2OFj8CBraBi+uOpuwBlzvA4JMhm7IrBWkJxSLwfkbPlAeit0B4zZtbex+nD0CWZpW+AQ4OgdESZa/73Luve27/9rTn9wMgjHKG6ip4oAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+QKARMeL9L9k18AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAACkUlEQVR42u3cS26EMAwA0KZXDMecOzIrNkhUxZD/e/uqA9iOg4jTvu8/AAAAAAAwqm3bbr/o/nw+yZ0DANAH+v3AU79uAQAAAAAAAAAAwH3J5CsAAAAAAEZ0nhTwnykAkb8BAEAf6PcDV0y+AgAAAAAAAAAACDD5CgAAAACAIZxP+x8ip/5NDgAA0AfW6gP1sTA3k68AAAAAAAAAAAACTL4CAAAAAKBrJU/3vzmFAAAAfaA+FtZj8hUAAAAAAAAAAEBAyjkbfQUAAAAAQPdqnOK/miAw47X2ds0AALP2gSv1sbAik68AAAAAAAAAAAAC0r77+BEAAAAAAFq7mlZQYlJCzf8FAAAwM5OvAAAAAAAAAAAAAky+AgAAAACAzlxNpirBtCsAAIA4k68AAAAAAAAAAAACTL4a1NWpJyeUWDn+5QHqKmA9AQDrHfZZoP6irgLWEwCw3tVk8hUAAAAAAAAAAEDA7clXvrCmhSPuWsfXOf7FO+Jv3XrgulFX6D0/nYieM089R8+V8nW79vooHureV/eXFfpCfT7iTz1w3agrjJKf9kNz7788R8+VcnXb+6v+mHwFAAAAAAAAAAAQcHvyFQCszAk+xAf0mXcH+Yf6/zyP5BMAgP4U8QGU23fLP9T/53kkn+iNyVcAAAAAAAAAAAABJl+9ZJWTAr1/mX31xWuvv1dcULKO+AKcmvHZug6IdwB9I8gvEwwQJ6OsN95fiQt1xH6eNvHp/RUA+kaYaz/RE5OvAAAAAAAAAAAAAlLOuepJK1+K/n0/St9/1ogncQPASH2PdYuZ+m/9GPJLfbcfLfPca78/Ec9t7z/qBQD01vdYt5ip/9aPIb/Ud/vR95+7yVcAAAAAAAAAAAABX/6Z8AvqXAOiAAAAAElFTkSuQmCC" alt="dino" class="google-dino-ground-img" />
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACV8AAAAYCAYAAADnXB+kAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpVIqDu0g4pChOlkQFXHUKhShQqgVWnUweekfNGlIUlwcBdeCgz+LVQcXZ10dXAVB8AfEydFJ0UVKvC8ptIjxhkc+zrvn8N59gNCsMs3qGQc03TYzqaSYy6+KoVeEEUCUvkGZWcacJKXhW1/31Et1l+BZ/n1/Vr9asBgQEIlnmWHaxBvE05u2wXmfOMbKskp8Tjxm0gGJH7muePzGueSywDNjZjYzTxwjFktdrHQxK5sa8RRxXNV0yhdyHquctzhr1Tprn5PfMFLQV5a5TmsYKSxiCRJEKKijgipsJOivk2IhQ/tJH/+Q65fIpZCrAkaOBdSgQXb94G/we7ZWcXLCS4okgd4Xx/kYAUK7QKvhON/HjtM6AYLPwJXe8deawMwn6Y2OFj8CBraBi+uOpuwBlzvA4JMhm7IrBWkJxSLwfkbPlAeit0B4zZtbex+nD0CWZpW+AQ4OgdESZa/73Luve27/9rTn9wMgjHKG6ip4oAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+QKARMeL9L9k18AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAACkUlEQVR42u3cS26EMAwA0KZXDMecOzIrNkhUxZD/e/uqA9iOg4jTvu8/AAAAAAAwqm3bbr/o/nw+yZ0DANAH+v3AU79uAQAAAAAAAAAAwH3J5CsAAAAAAEZ0nhTwnykAkb8BAEAf6PcDV0y+AgAAAAAAAAAACDD5CgAAAACAIZxP+x8ip/5NDgAA0AfW6gP1sTA3k68AAAAAAAAAAAACTL4CAAAAAKBrJU/3vzmFAAAAfaA+FtZj8hUAAAAAAAAAAEBAyjkbfQUAAAAAQPdqnOK/miAw47X2ds0AALP2gSv1sbAik68AAAAAAAAAAAAC0r77+BEAAAAAAFq7mlZQYlJCzf8FAAAwM5OvAAAAAAAAAAAAAky+AgAAAACAzlxNpirBtCsAAIA4k68AAAAAAAAAAAACTL4a1NWpJyeUWDn+5QHqKmA9AQDrHfZZoP6irgLWEwCw3tVk8hUAAAAAAAAAAEDA7clXvrCmhSPuWsfXOf7FO+Jv3XrgulFX6D0/nYieM089R8+V8nW79vooHureV/eXFfpCfT7iTz1w3agrjJKf9kNz7788R8+VcnXb+6v+mHwFAAAAAAAAAAAQcHvyFQCszAk+xAf0mXcH+Yf6/zyP5BMAgP4U8QGU23fLP9T/53kkn+iNyVcAAAAAAAAAAAABJl+9ZJWTAr1/mX31xWuvv1dcULKO+AKcmvHZug6IdwB9I8gvEwwQJ6OsN95fiQt1xH6eNvHp/RUA+kaYaz/RE5OvAAAAAAAAAAAAAlLOuepJK1+K/n0/St9/1ogncQPASH2PdYuZ+m/9GPJLfbcfLfPca78/Ec9t7z/qBQD01vdYt5ip/9aPIb/Ud/vR95+7yVcAAAAAAAAAAAABX/6Z8AvqXAOiAAAAAElFTkSuQmCC" alt="dino" class="google-dino-ground-img" >
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACV8AAAAYCAYAAADnXB+kAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpVIqDu0g4pChOlkQFXHUKhShQqgVWnUweekfNGlIUlwcBdeCgz+LVQcXZ10dXAVB8AfEydFJ0UVKvC8ptIjxhkc+zrvn8N59gNCsMs3qGQc03TYzqaSYy6+KoVeEEUCUvkGZWcacJKXhW1/31Et1l+BZ/n1/Vr9asBgQEIlnmWHaxBvE05u2wXmfOMbKskp8Tjxm0gGJH7muePzGueSywDNjZjYzTxwjFktdrHQxK5sa8RRxXNV0yhdyHquctzhr1Tprn5PfMFLQV5a5TmsYKSxiCRJEKKijgipsJOivk2IhQ/tJH/+Q65fIpZCrAkaOBdSgQXb94G/we7ZWcXLCS4okgd4Xx/kYAUK7QKvhON/HjtM6AYLPwJXe8deawMwn6Y2OFj8CBraBi+uOpuwBlzvA4JMhm7IrBWkJxSLwfkbPlAeit0B4zZtbex+nD0CWZpW+AQ4OgdESZa/73Luve27/9rTn9wMgjHKG6ip4oAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+QKARMeL9L9k18AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAACkUlEQVR42u3cS26EMAwA0KZXDMecOzIrNkhUxZD/e/uqA9iOg4jTvu8/AAAAAAAwqm3bbr/o/nw+yZ0DANAH+v3AU79uAQAAAAAAAAAAwH3J5CsAAAAAAEZ0nhTwnykAkb8BAEAf6PcDV0y+AgAAAAAAAAAACDD5CgAAAACAIZxP+x8ip/5NDgAA0AfW6gP1sTA3k68AAAAAAAAAAAACTL4CAAAAAKBrJU/3vzmFAAAAfaA+FtZj8hUAAAAAAAAAAEBAyjkbfQUAAAAAQPdqnOK/miAw47X2ds0AALP2gSv1sbAik68AAAAAAAAAAAAC0r77+BEAAAAAAFq7mlZQYlJCzf8FAAAwM5OvAAAAAAAAAAAAAky+AgAAAACAzlxNpirBtCsAAIA4k68AAAAAAAAAAAACTL4a1NWpJyeUWDn+5QHqKmA9AQDrHfZZoP6irgLWEwCw3tVk8hUAAAAAAAAAAEDA7clXvrCmhSPuWsfXOf7FO+Jv3XrgulFX6D0/nYieM089R8+V8nW79vooHureV/eXFfpCfT7iTz1w3agrjJKf9kNz7788R8+VcnXb+6v+mHwFAAAAAAAAAAAQcHvyFQCszAk+xAf0mXcH+Yf6/zyP5BMAgP4U8QGU23fLP9T/53kkn+iNyVcAAAAAAAAAAAABJl+9ZJWTAr1/mX31xWuvv1dcULKO+AKcmvHZug6IdwB9I8gvEwwQJ6OsN95fiQt1xH6eNvHp/RUA+kaYaz/RE5OvAAAAAAAAAAAAAlLOuepJK1+K/n0/St9/1ogncQPASH2PdYuZ+m/9GPJLfbcfLfPca78/Ec9t7z/qBQD01vdYt5ip/9aPIb/Ud/vR95+7yVcAAAAAAAAAAAABX/6Z8AvqXAOiAAAAAElFTkSuQmCC" alt="dino" class="google-dino-ground-img" >
     </div>
     <div id="obstacles" class="google-dino-obstacles"></div>
     <div class="google-dino-loseMenu" id="loseMenu">
@@ -329,7 +329,7 @@
       <div class="ourTeamDiv_slider_item" id="fourth-card">
         <img src="/FrameForge/assets/kira-327bb8eb.jpg" alt="studentPhoto4" class="ourTeamDiv_slider_img">
         <h3 class="ourTeamDiv_slider_title">Кіра</h3>
-        <p class="ourTeamDiv_slider_description">Привіт, мене звати Кіра! Я робила секції (Калькулятор часу, найібльше число)</p>
+        <p class="ourTeamDiv_slider_description">Привіт, мене звати Кіра! Я робила секції (Калькулятор часу, найбільше число)</p>
       </div>
     </div>
   </div>
@@ -434,7 +434,7 @@
   <div class="footer-modal"> 
     <h2 class="footer-modal-title">Дякую за підписку!</h2>
     <button type="button" class="button-footer-close" data-action="close-footer-modal">
-      <img src="../img/close-btn-footer.svg" alt="close-btn-footer">
+      <img src="/FrameForge/assets/close-btn-footer-37faabd5.svg" alt="close-btn-footer">
     </button>
   </div>
 </div>
