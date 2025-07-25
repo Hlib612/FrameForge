@@ -96,38 +96,4 @@ CSS-анімація бажана, але не є обов’язковою;
 Знайти вченого який прожив найбільше і вченого який прожив найменьше
 Знайти вчених в яких співпадають перші літери імені і прізвища
 Дізнатися чи всі вченні працювали в 19 столітті
-## Познайомтеся з нами ближче
-<div class="ourTeamDiv" id="ourTeam">
-  <h2 class="ourTeamDiv_title" data-aos="fade-down" data-aos-delay="400">Наша команда</h2>
-  <div class="ourTeamDiv_slider-wrapper">
-    <div class="ourTeamDiv_slider" id="team-slider">
-      <div class="ourTeamDiv_slider_item" id="first-card">
-        <img src="./img/oleksandr.jpg" alt="studentPhoto1" class="ourTeamDiv_slider_img">
-        <h3 class="ourTeamDiv_slider_title">Олександр</h3>
-        <p class="ourTeamDiv_slider_description" data-aos="zoom-in-up" data-aos-delay="500">Привіт, мене звати Олександр! Я робив секціі (Камінь-Ножиці-Бумага, Обери вчених, Футер, ГуглДіно, Калькулятор часу і одну модалку).</p>
-      </div>
-      <div class="ourTeamDiv_slider_item" id="second-card">
-        <img src="./img/hlib.jpg" alt="studentPhoto2" class="ourTeamDiv_slider_img">
-        <h3 class="ourTeamDiv_slider_title">Гліб</h3>
-        <p class="ourTeamDiv_slider_description">Привіт, мене звати Гліб! Я робив секції (Вгадай число, Футбол гру, Найбільше число, Перевір рік і одну модалку). Також я Тімлід нашої команди.</p>
-      </div>
-      <div class="ourTeamDiv_slider_item" id="third-card">
-        <img src="./img/serhii.jpg" alt="studentPhoto3" class="ourTeamDiv_slider_img">
-        <h3 class="ourTeamDiv_slider_title">Сергій</h3>
-        <p class="ourTeamDiv_slider_description">Привіт, мене звати Сергій! Я робив секції (Хедер, Наша команда, Калькулятор). Також я Скраммайстер нашої команди.</p>
-      </div>
-      <div class="ourTeamDiv_slider_item" id="fourth-card">
-        <img src="./img/kira.jpg" alt="studentPhoto4" class="ourTeamDiv_slider_img">
-        <h3 class="ourTeamDiv_slider_title">Кіра</h3>
-        <p class="ourTeamDiv_slider_description">Привіт, мене звати Кіра! Я робила секції (Калькулятор часу, найбільше число)</p>
-      </div>
-    </div>
-  </div>
- 
-  <button class="ourTeamDiv_button left" id="button-slider-previous">
-    <img src="./img/arrow-left.svg" alt="arrow-left" class="ourTeamDiv_button_svg">
-  </button>
-  <button class="ourTeamDiv_button right" id="button-slider-next">
-    <img src="./img/arrow-right.svg" alt="arrow-right" class="ourTeamDiv_button_svg">
-  </button>
-</div>
+![hamering](./src/img/Forge.jpg);
